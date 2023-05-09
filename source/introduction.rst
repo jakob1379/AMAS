@@ -12,61 +12,30 @@ Advanced Methods in Applied Statistics 2023
 Basic Information
 -----------------
 
-Block 3 - Timetable A of the 2023 `academic
-calendar <http://www.science.ku.dk/english/student-life/studying-at-the-faculty/academic-calendar/>`__
+* Block 3 - Timetable A of the 2023 `academic calendar <http://www.science.ku.dk/english/student-life/studying-at-the-faculty/academic-calendar/>`__
 
-Tues 08:00 - 12:00 and Thurs 08:00- 12:00 & 13:00 - 17:00
+  * Tuesday 08:00 - 12:00 and Thurs 08:00- 12:00 & 13:00 - 17:00
+  * Actual
 
-Actual
+    * 08:45 - 09:00 Q&A or discussion with Jason
+    * **09:00** lecture on new material (not 09:05 or 09:15)
+    * On Thursday there will often be new material starting at 13:00
+    * On Thursday it is very unlikely that any new material, lectures, or review will happen after 16:00.
 
--  08:45 - 09:00 Q&A or discussion with Jason
--  **09:00** lecture on new material (not 09:05 or 09:15)
--  On Thursday there will often be new material starting at 13:00
--  On Thursday it is very unlikely that any new material, lectures, or
-   review will happen after 16:00.
+  * Class Location: øv - bib 4-0-17, Universitetsparken 1-3, DIKU
+  * Official schedule (`link <https://skema.ku.dk/tt/tt.asp?SDB=KU2223&language=DK&folder=Reporting&style=individual&type=module&idtype=id&id=114333&weeks=28-38&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+individual>`__)
 
-Class Location: øv - bib 4-0-17, Universitetsparken 1-3, DIKU
-
-Official schedule
-(`link <https://skema.ku.dk/tt/tt.asp?SDB=KU2223&language=DK&folder=Reporting&style=individual&type=module&idtype=id&id=114333&weeks=28-38&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+individual>`__)
-
-Classes will be composed of ~20-30% lecture and demonstrations followed
-by exercise
-
-While assignments, projects, and exercises can be done in the
-programming language of the students choice, the examples and
-demonstrations will be mainly in Python and/or scientific packages
-thereof, i.e. SciPy, NumPy, etc.
-
-Required text or textbooks: None
-
-2016 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/AdvancedMethodsAppliedStatistics2016.html>`__
-
-2017 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2017/AdvancedMethodsAppliedStatistics2017.html>`__
-
-2018 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2018/AdvancedMethodsAppliedStatistics2018.html>`__
-
-2019 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2019/AdvancedMethodsAppliedStatistics2019.html>`__
-
-2020 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2020/AdvancedMethodsAppliedStatistics2020.html>`__
-
-2021 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2021/AMAS.html>`__
-
-2022 Advanced Methods in Applied Statistics
-`webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2022/AMAS.html>`__
-
-It is recommended, but not required, to have taken an introdcutory
-course on statistics, e.g. "Applied Statistics - From data to results"
-which can be found
-`here <http://www.nbi.dk/%7Epetersen/Teaching/AppliedStatistics2022.html>`__
-
---------------
+ * Classes will be composed of ~20-30% lecture and demonstrations followed by exercise
+ * While assignments, projects, and exercises can be done in the programming language of the students choice, the examples and demonstrations will be mainly in Python and/or scientific packages thereof, i.e. SciPy, NumPy, etc.
+ * Required text or textbooks: None
+ * 2016 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/AdvancedMethodsAppliedStatistics2016.html>`__
+ * 2017 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2017/AdvancedMethodsAppliedStatistics2017.html>`__
+ * 2018 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2018/AdvancedMethodsAppliedStatistics2018.html>`__
+ * 2019 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2019/AdvancedMethodsAppliedStatistics2019.html>`__
+ * 2020 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2020/AdvancedMethodsAppliedStatistics2020.html>`__
+ * 2021 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2021/AMAS.html>`__
+ * 2022 Advanced Methods in Applied Statistics `webpage <http://www.nbi.dk/%7Ekoskinen/Teaching/AdvancedMethodsInAppliedStatistics2022/AMAS.html>`__
+ * It is recommended, but not required, to have taken an introdcutory course on statistics, e.g. "Applied Statistics - From data to results" which can be found `here <http://www.nbi.dk/%7Epetersen/Teaching/AppliedStatistics2022.html>`__
 
 Evaluation
 ==========
