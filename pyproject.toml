@@ -1,0 +1,10 @@
+[project]
+name = ""
+version = "0.0.1"
+dependencies = [
+    "sphinx",
+    "sphinx-rtd-theme",
+]
+
+[tool.uv]
+package = false
