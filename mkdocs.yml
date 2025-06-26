@@ -1,21 +1,46 @@
 site_name: "Advanced Methods in Applied Statistics 2025"
+repo_name: jakob1379/AMAS2025
+repo_url: https://github.com/jakob1379/AMAS2025
+site_url: !ENV READTHEDOCS_CANONICAL_URL
+extra_javascript:
+    - javascript/readthedocs.js
 
 theme:
   name: material
+  icon:
+    repo: fontawesome/brands/github
+
+  # Add the palette for KU colors
+  palette:
+    # KU Black for the header and navigation
+    - scheme: default
+      primary: "white"
+      accent: "red"
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    # A dark theme option with KU Red as the primary highlight
+    - scheme: slate
+      primary: "red"
+      accent: "red"
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+
   features:
-    # - navigation.tabs.sticky
     - content.tabs.link
     - navigation.footer
     - navigation.sections
     - navigation.tabs
     - navigation.top
     - navigation.prune
-
     - navigation.tracking
     - search.highlight
     - search.suggest
     - toc.follow
     - toc.integrate
+  favicon: assets/Ku-ucph-logo-svg.svg
+  logo: assets/Ku-ucph-logo-svg.svg
 
 markdown_extensions:
   - pymdownx.details
@@ -24,8 +49,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-  - pymdownx.details
-  
+
 plugins:
   - search
   - glightbox
@@ -33,4 +57,4 @@ plugins:
 nav:
   - Home: index.md
   - Classes: classes.md
-      
+

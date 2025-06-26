@@ -1,2 +1,0 @@
-- I do not wish to see the content of the files as some of them ipynb and other files contain binary content which is much too large to handle for your streaming window. just output the name of the file, not the content.
-- files are not to be moved/deleted from the original archive "AdvancedMethodsInAppliedStatistics2025", only copies are allowed.
