@@ -1,0 +1,36 @@
+site_name: "Advanced Methods in Applied Statistics 2025"
+
+theme:
+  name: material
+  features:
+    # - navigation.tabs.sticky
+    - content.tabs.link
+    - navigation.footer
+    - navigation.sections
+    - navigation.tabs
+    - navigation.top
+    - navigation.prune
+
+    - navigation.tracking
+    - search.highlight
+    - search.suggest
+    - toc.follow
+    - toc.integrate
+
+markdown_extensions:
+  - pymdownx.details
+  - pymdownx.superfences
+  - attr_list
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.details
+  
+plugins:
+  - search
+  - glightbox
+
+nav:
+  - Home: index.md
+  - Classes: classes.md
+      
