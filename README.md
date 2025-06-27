@@ -32,15 +32,19 @@ To build and view the site on your local machine, you will need Python and `pip`
 2.  **Install dependencies:**
     The site requires `mkdocs` and the `material` theme.
     ```bash
-    pip install mkdocs mkdocs-material
+    #using uv
+    uv sync
+    
+    # using pip
+    pip install .
     ```
 
 3.  **Serve the website:**
     Run the following command from the root of the repository:
     ```bash
-    mkdocs serve
+    mkdocs serve -o
     ```
-    This will start a local development server. You can view the website by opening your browser and navigating to `http://127.0.0.1:8000`. The site will automatically reload when you make changes to the source files.
+    This will start a local development server. You can view the website by navigating to `http://127.0.0.1:8000`. The site will automatically reload when you make changes to the source files.
 
 4.  **(Optional) Build static files:**
     To generate the static HTML files for the site, run:
