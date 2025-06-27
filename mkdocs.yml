@@ -1,9 +1,10 @@
 site_name: "Advanced Methods in Applied Statistics 2025"
 repo_name: jakob1379/AMAS2025
 repo_url: https://github.com/jakob1379/AMAS2025
-site_url: !ENV READTHEDOCS_CANONICAL_URL
-extra_javascript:
-    - javascript/readthedocs.js
+
+# site_url: !ENV READTHEDOCS_CANONICAL_URL
+# extra_javascript:
+#     - javascript/readthedocs.js
 
 theme:
   name: material
@@ -53,8 +54,12 @@ markdown_extensions:
 plugins:
   - search
   - glightbox
-
+  - mike
+  
 nav:
   - Home: index.md
   - Classes: classes.md
 
+extra:
+  version:
+    provider: mike
