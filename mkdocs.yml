@@ -3,16 +3,11 @@ repo_name: jakob1379/AMAS2025
 repo_url: https://github.com/jakob1379/AMAS2025
 site_url: 'https://jakob1379.github.io/AMAS2025/'
 
-# site_url: !ENV READTHEDOCS_CANONICAL_URL
-# extra_javascript:
-#     - javascript/readthedocs.js
-
 theme:
   name: material
+  custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
-  custom_dir: overrides
-  # Add the palette for KU colors
   palette:
     # KU Black for the header and navigation
     - scheme: default
@@ -28,7 +23,6 @@ theme:
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
-
   features:
     - content.tabs.link
     - navigation.footer
@@ -44,6 +38,15 @@ theme:
   favicon: assets/Ku-ucph-logo-svg.svg
   logo: assets/Ku-ucph-logo-svg.svg
 
+nav:
+  - Home: index.md
+  - Classes: classes.md
+
+plugins:
+  - search
+  - glightbox
+  - mike
+
 markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
@@ -52,17 +55,13 @@ markdown_extensions:
   - toc:
       permalink: true
 
-plugins:
-  - search
-  - glightbox
-  - mike
-  
-nav:
-  - Home: index.md
-  - Classes: classes.md
-
 extra:
   version:
     provider: mike
 extra_css:
   - assets/custom.css
+
+# Uncomment and configure if needed:
+# site_url: !ENV READTHEDOCS_CANONICAL_URL
+# extra_javascript:
+#     - javascript/readthedocs.js
