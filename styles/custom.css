@@ -1,0 +1,23 @@
+.md-nav__title {
+  background-color: #a6192e !important;
+}
+
+.md-header__outdated strong {
+    color: black !important;
+}
+/* Light mode (default) */
+[data-md-color-scheme="default"] {
+  --md-primary-fg-color--light: #c94a53;    /* Lighter variant for hover, etc. */
+  --md-primary-fg-color--dark: #7a1021;     /* Darker variant for active, etc. */
+  --md-accent-fg-color: #595a5c;            /* UCPH Gray */
+  --md-accent-bg-color: #f4f4f4;
+}
+
+/* Dark mode (slate) */
+[data-md-color-scheme="slate"] {
+  --md-primary-fg-color--light: #ff5a5a;    /* Lighter red for hover in dark mode */
+  --md-primary-fg-color--dark: #7a1021;     /* Darker red for active in dark mode */
+  --md-accent-fg-color: #e57373;            /* Lighter accent for visibility */
+  --md-accent-bg-color: #2d2d2d;
+}
+

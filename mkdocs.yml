@@ -10,19 +10,25 @@ theme:
     repo: fontawesome/brands/github
   palette:
     # KU Black for the header and navigation
+    # A dark theme option with KU Red as the primary highlight
+  palette:
     - scheme: default
-      primary: "white"
-      accent: "red"
+      media: "(prefers-color-scheme: light)"      
+      primary: white
+      accent: grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
-    # A dark theme option with KU Red as the primary highlight
     - scheme: slate
-      primary: "red"
-      accent: "red"
+      media: "(prefers-color-scheme: dark)"
+      primary: red
+      accent: grey
       toggle:
         icon: material/brightness-4
         name: Switch to light mode
+  font:
+    text: Roboto
+    code: Roboto Mono
   features:
     - content.tabs.link
     - navigation.footer
@@ -56,12 +62,10 @@ markdown_extensions:
       permalink: true
 
 extra:
+  homepage: https://nbi.ku.dk/
   version:
     provider: mike
+    
 extra_css:
-  - assets/custom.css
+  - styles/custom.css
 
-# Uncomment and configure if needed:
-# site_url: !ENV READTHEDOCS_CANONICAL_URL
-# extra_javascript:
-#     - javascript/readthedocs.js
