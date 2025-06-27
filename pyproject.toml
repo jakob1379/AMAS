@@ -17,7 +17,7 @@ dev = [
     "poethepoet>=0.35.0",
 ]
 
-[tool.poe.tasks.deploy-docs]
+[tool.poe.tasks.deploy]
 cmd = "mike deploy --push --update-aliases ${version} latest"
 help = "Deploy a new version of the documentation and update the 'latest' alias"
 args = [

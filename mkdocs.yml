@@ -64,3 +64,5 @@ nav:
 extra:
   version:
     provider: mike
+extra_css:
+  - assets/custom.css
