@@ -62,7 +62,6 @@ markdown_extensions:
       permalink: true
 
 extra:
-  homepage: https://nbi.ku.dk/
   version:
     provider: mike
     
