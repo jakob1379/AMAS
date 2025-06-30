@@ -73,7 +73,7 @@ Class notes will be posted here:
 ## 7 - Parameter Estimation
 
 *   [Lecture 7](Slides/Lecture7_ParameterEstimation.pdf)
-*   [Data file](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/Exercises/MLE_Variance_data.txt) for one of the exercises
+*   [Data file](data/MLE_Variance_data.txt) for one of the exercises
 
 ---
 
