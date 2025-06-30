@@ -99,7 +99,12 @@ Class notes will be posted here:
 ## 10 - Oral presentations (in class) & Non-parametric Tests
 
 *   [Lecture 10](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/LectureX_Nonparameteric_Distributions.pdf)
-*   Many of the presentations can be found [here](Presentations_2016.html)
+*   Oral Presentations for 2016 Advanced Methods in Applied Statistics
+    *   Kalman Filter - [Kalman slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/kalman_slides.pdf) and visualization [python script](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/visualizeKalman.py)
+    *   Simulated Annealing - Simulated annealing [slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/SimulatedAnnealing.pdf)
+    *   Recursive Bayesian estimation of atom numbers [slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/BayesianEstimatorAtomicNumbers.pdf)
+    *   Approximate Bayesian Computational Methods - [ABC slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/ABC_MCMC_Presentation.pdf)
+    *   Support Vector Network - [Writeup](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/SVN_TobiasThune.pdf)
 
 ---
 
