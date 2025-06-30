@@ -80,7 +80,7 @@ Class notes will be posted here:
 ## 8 - Hypothesis Testing
 
 *   [Lecture 8](Slides/Lecture8_MoreTests.pdf)
-*   [Data file](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/MLE_Variance_data_2.txt) for one of the exercises
+*   [Data file](data/MLE_Variance_data_2.txt) for one of the exercises
 *   Journal Articles related to this lecture
     *   [Failure of Wilk's theorem](http://arxiv.org/abs/1210.3651) in neutrino physics
 
@@ -89,7 +89,7 @@ Class notes will be posted here:
 ## 9 - Splines
 
 *   [Lecture 9](Slides/Lecture9_Splines.pdf)
-*   Data ([SplineOsc1.txt](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/SplineOsc1.txt), [SplineCubic.txt](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/SplineCubic.txt), and [DustLogger.dat](data/DustLog_forClass.dat))
+*   Data ([SplineOsc1.txt](data/SplineOsc1.txt), [SplineCubic.txt](data/SplineCubic.txt), and [DustLogger.dat](data/DustLog_forClass.dat))
     *   Here is the [full](data/optical_log.up1.dat) 1.27M+ entry dust logger file
 *   Journal Articles
     *   [Penalized splines](http://arxiv.org/pdf/1301.2184v1.pdf) for smoothness in higher-dimensions
@@ -100,10 +100,10 @@ Class notes will be posted here:
 
 *   [Lecture 10](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/LectureX_Nonparameteric_Distributions.pdf)
 *   Oral Presentations for 2016 Advanced Methods in Applied Statistics
-    *   Kalman Filter - [Kalman slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/kalman_slides.pdf) and visualization [python script](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/visualizeKalman.py)
-    *   Simulated Annealing - Simulated annealing [slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/SimulatedAnnealing.pdf)
-    *   Recursive Bayesian estimation of atom numbers [slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/BayesianEstimatorAtomicNumbers.pdf)
-    *   Approximate Bayesian Computational Methods - [ABC slides](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/presentations_2016/ABC_MCMC_Presentation.pdf)
+    *   Kalman Filter - [Kalman slides](studentpresentations/kalman_slides.pdf) and visualization [python script](studentpresentations/visualizeKalman.py)
+    *   Simulated Annealing - Simulated annealing [slides](studentpresentations/SimulatedAnnealing.pdf)
+    *   Recursive Bayesian estimation of atom numbers [slides](studentpresentations/BayesianEstimatorAtomicNumbers.pdf)
+    *   Approximate Bayesian Computational Methods - [ABC slides](studentpresentations/ABC_MCMC_Presentation.pdf)
     *   Support Vector Network - [Writeup](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/SVN_TobiasThune.pdf)
 
 ---
@@ -116,8 +116,8 @@ Class notes will be posted here:
 *   Exercise 1 python TMVA (see 2017 course webpage)
 *   Exercise 2 python TMVA (see 2017 course webpage)
 *   Data
-    *   Exercise 1 ([training signal](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/BDT_signal_train.txt), [training background](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/BDT_background_train.txt), [testing signal](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/BDT_signal_test.txt), [testing background](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/BDT_background_test.txt))
-    *   Exercise 2 (16 variable [file](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/data/BDT_16var.txt))
+    *   Exercise 1 ([training signal](data/BDT_signal_train.txt), [training background](data/BDT_background_train.txt), [testing signal](data/BDT_signal_test.txt), [testing background](data/BDT_background_test.txt))
+    *   Exercise 2 (16 variable [file](data/BDT_16var.txt))
         *   The first column is the index, hence there are 17 'variables', but the index variable only for book keeping and has no impact on whether an event is signal or background.
         *   Every even row is the 'signal' and every odd row is the 'background'. Thus, there are two rows for each index in the first column: the first is the signal and the second is the background. [Format is odd, but I got it from a colleague].
 

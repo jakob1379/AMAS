@@ -1,26 +1,24 @@
-site_name: "Advanced Methods in Applied Statistics 2025"
-repo_name: jakob1379/AMAS2025
-repo_url: https://github.com/jakob1379/AMAS2025
-site_url: 'https://jakob1379.github.io/AMAS2025/'
-
+---
+site_name: Advanced Methods in Applied Statistics
+site_url: https://jakob1379.github.io/AMAS/
+site_author: D. Jason Koskinen
+repo_name: jakob1379/AMAS
+repo_url: https://github.com/jakob1379/AMAS
 theme:
   name: material
   custom_dir: overrides
   icon:
     repo: fontawesome/brands/github
   palette:
-    # KU Black for the header and navigation
-    # A dark theme option with KU Red as the primary highlight
-  palette:
     - scheme: default
-      media: "(prefers-color-scheme: light)"      
+      media: '(prefers-color-scheme: light)'
       primary: white
       accent: grey
       toggle:
         icon: material/brightness-7
         name: Switch to dark mode
     - scheme: slate
-      media: "(prefers-color-scheme: dark)"
+      media: '(prefers-color-scheme: dark)'
       primary: red
       accent: grey
       toggle:
@@ -41,18 +39,12 @@ theme:
     - search.suggest
     - toc.follow
     - toc.integrate
-  favicon: assets/Ku-ucph-logo-svg.svg
-  logo: assets/Ku-ucph-logo-svg.svg
-
+  favicon: assets/Ku-ucph-logo.svg
+  logo: assets/Ku-ucph-logo.svg
 nav:
   - Home: index.md
   - Classes: classes.md
-
-plugins:
-  - search
-  - glightbox
-  - mike
-
+plugins: [search, glightbox, mike]
 markdown_extensions:
   - pymdownx.details
   - pymdownx.superfences
@@ -60,11 +52,7 @@ markdown_extensions:
   - md_in_html
   - toc:
       permalink: true
-
 extra:
   version:
     provider: mike
-    
-extra_css:
-  - styles/custom.css
-
+extra_css: [styles/custom.css]

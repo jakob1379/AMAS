@@ -1,10 +1,8 @@
 # Advanced Methods in Applied Statistics 2025
 
-[![Documentation Status](https://readthedocs.org/projects/amas2025/badge/?version=latest)](https://amas2025.readthedocs.io/en/latest/?badge=latest)
-
 This repository contains the source materials for the AMAS2025 course website, built with MkDocs.
 
-**Find the live page here: [https://amas2025.readthedocs.io/en/latest/](https://amas2025.readthedocs.io/en/latest/)**
+**Find the live page here: [https://jakob1379.github.io/AMAS/latest/](https://jakob1379.github.io/AMAS/latest/)**
 
 ## Course Overview
 

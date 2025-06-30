@@ -1,10 +1,11 @@
-## The Educators
+## The Educator
 
 <div class="grid cards" markdown>
--   **D. Jason Koskinen**  
+-    ![D. Jason Koskinen](assets/DJK.png){loading=lazy height="160" align="left"}
+     <br>
+    **D. Jason Koskinen**  
     *Lecturer*  
     Email: `koskinen (at) nbi.ku.dk`
-    ![D. Jason Koskinen](assets/DJK.png){loading=lazy height="160" align="left"}
 </div>
 
 ## Basic Information
@@ -47,7 +48,7 @@
     *   Problem set 2 (10%)
         *   Will be assigned sometime between March 7 and March 17
         *   **Due: Friday April 8** at 16:00 Copenhagen time via email to Jason
-        *   [Problem Set 2 assignment](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/ProblemSet2.pdf)
+        *   [Problem Set 2 assignment](Slides/ProblemSet2.pdf)
         *   Solution(s) to Problem Set 2
 *   **Project** (25%)
     *   Similar to the oral presentation, this project focuses on using a method or statistical treatment that is preferably related to your field of research that you or your group select. Unlike the oral presentation, the project includes not just understanding and explaining the method, but also using it on a some appropriate data set of your own choosing.
@@ -61,7 +62,7 @@
         *   Start at 08:00 on **<u>MONDAY April 11</u>**
         *   <u>**Submit by 12:00 on Tuesday April 12**</u>
         *   If for some reason you are absolutely positive that there is no way you can do a 28-hour take home exam from April 11 to 12, let Jason know immediately.
-    *   The exam will be very similar to problem set 2 and here is the simplest of [outlines](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/Proto-Exam.pdf) of what the exam may look like
+    *   The exam will be very similar to problem set 2 and here is the simplest of [outlines](Slides/Proto-Exam.pdf) of what the exam may look like
     *   [Here](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/ExtraProblems.pdf) are two extra practice problems similar to what will be on the exam for those
 *   Extra Credit (+2% to final course grade based on a 1-100% scale)
     *   2016 NCAA Men's Basketball Bracket submission due by 21:00 on March 17
@@ -72,7 +73,7 @@
 
 # Course Syllabus
 
-The [outline](https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2016/StatsSyllabus2016.pdf) is a rough sketch of the course material, and is 100% likely to change throughout the course. Even so, we **will** absolutely cover the following topics which may require additional software support:
+The [outline](Slides/StatsSyllabus2016.pdf) is a rough sketch of the course material, and is 100% likely to change throughout the course. Even so, we **will** absolutely cover the following topics which may require additional software support:
 
 *   Multivariate analysis (MVA) techniques including Boosted Decision Trees (BDTS)
 *   The MultiNest bayesian inference tool

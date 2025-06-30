@@ -1,7 +1,7 @@
 [project]
-name = "amas2025"
+name = "amas"
 version = "0.1.0"
-description = "Add your description here"
+description = "Project for maintaining the course material of Advanced Methods in Applied Statistics at the University of Copenhagen"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
