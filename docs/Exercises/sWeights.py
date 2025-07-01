@@ -10,9 +10,16 @@
 #    of other variables (control variables) of interest for a specific
 #    category (typically signal)?
 # 
+#  This is a very general problem. Imagine you have two (or more) types of
+#  mice, bacteria, cells, particles, humans, etc., and that you don't know
+#  which are of which type in general, but only from a known feature, such
+#  as size, shape, color, income, activity, etc. which you can fit.
+#  Now you want to know the distribution of another feature for one type
+#  of cells, etc. - how to get this, along with the correct uncertainties?
+# 
 #  Author: Troels C. Petersen (NBI)
 #  Email:  petersen@nbi.dk
-#  Date:   14th of March 2016
+#  Date:   18th of February 2018
 # ------------------------------------------------------------------------ #
 
 from ROOT import *
@@ -28,7 +35,7 @@ gStyle.SetOptFit(1111)
 SavePlots = False
 verbose = True
 Nverbose = 10
-RunFast = False    # Fix PDF shape parameters to truth values!
+RunFast = True    # Fix PDF shape parameters to truth values!
 
 pi = TMath.Pi()
 
@@ -46,6 +53,7 @@ def main() :
 
     # File with data in:
     infile = open('data_sWeights.txt', 'r')
+    # infile = open('data_sWeights2.txt', 'r')
 
     # List (size 3 x Nevents) to put data into:
     x_all = []
@@ -150,8 +158,20 @@ def main() :
     fit_massshape.SetLineColor(kBlack)
     fitres = hist2D_all.Fit("fit_massshape", "LRS")   # Option "S" gives fit result as output!
     cmfit = fitres.GetCovarianceMatrix()              # Access to entries: cmfit[0][0]
-
     
+
+    # Simple "cut"-based selection of signal and background:
+    # ------------------------------------------------------------------------
+    hist_Angle_sig = TH1D("hist_Angle_sig", ";Signal Angle;Frequency", Nbins[2], xmin[2], xmax[2])
+    hist_Angle_bkg = TH1D("hist_Angle_bkg", ";Background Angle;Frequency", Nbins[2], xmin[2], xmax[2])
+
+    for i in xrange ( Nevents ) :
+        if ( abs(x_all[i][0]-0.8) < 0.25 and x_all[i][1] > -0.25 ) : 
+            hist_Angle_sig.Fill( x_all[i][2] )
+        if ( abs(x_all[i][0]-0.8) > 0.50 and x_all[i][1] < -0.50 ) : 
+            hist_Angle_bkg.Fill( x_all[i][2] )
+
+
 
     # Produce plots with the variable distributions for signal and background:
     # ------------------------------------------------------------------------
@@ -167,6 +187,14 @@ def main() :
         hist_all[i].SetLineWidth(2)
         hist_all[i].Draw()
 
+    hist_Angle_sig.SetLineColor(kBlue)
+    hist_Angle_sig.SetLineWidth(2)
+    hist_Angle_sig.Draw("same")
+
+    hist_Angle_bkg.SetLineColor(kRed)
+    hist_Angle_bkg.SetLineWidth(2)
+    hist_Angle_bkg.Draw("same")
+
     canvas1.cd(4)
     hist2D_all.SetMarkerColor(kMagenta)
     hist2D_all.Draw("box")
@@ -180,12 +208,12 @@ def main() :
     # Given succesful fit, how do you determine what the signal distribution of "angle" is?
     # -----------------------------------------------------------------------------------
 
+    """
     # Here are empty histograms - try to fill them:
     hist_Angle_sig = TH1D("hist_Angle_sig", ";Signal Angle;Frequency", Nbins[2], xmin[2], xmax[2])
     hist_Angle_bkg = TH1D("hist_Angle_bkg", ";Background Angle;Frequency", Nbins[2], xmin[2], xmax[2])
 
 
-    """
     for i in xrange ( len(x_all) ) :
         hist_Angle_sig.Fill( SOMETHING )
         hist_Angle_bkg.Fill( SOMETHING )
@@ -231,6 +259,8 @@ if __name__ == '__main__':
 # ----------
 #  1) Do the two 1D fits and the 2D fit converge well? Do they have good Chi2 probabilities?
 #     Can you imagine what the signal and background distributions look like? Otherwise draw them!
+#     Also, switch off the "RunFast" boolean, such that the full 2D fit runs, and realise how
+#     tough a task this is (it takes some time, but should converge!).
 #
 #  2) Try to make a signal and a background selection in Mass and Shape, and plot these to get a
 #     feel for the signal and background distributions of the Angle variables. Then try to subtract
