@@ -3,9 +3,23 @@
 # ------------------------------------------------------------------------ #
 #  Program for illustrating the use of sWeights from multidimensional fits.
 # 
+#  Challenge at hand:
+#    Given uncorrelated multidimensional data of two (or more) different
+#    categories (e.g. signal and background), which can be fitted in some
+#    dimensions (separation variables), how to best estimate the distribution
+#    of other variables (control variables) of interest for a specific
+#    category (typically signal)?
+# 
+#  This is a very general problem. Imagine you have two (or more) types of
+#  mice, bacteria, cells, particles, humans, etc., and that you don't know
+#  which are of which type in general, but only from a known feature, such
+#  as size, shape, color, income, activity, etc. which you can fit.
+#  Now you want to know the distribution of another feature for one type
+#  of cells, etc. - how to get this, along with the correct uncertainties?
+# 
 #  Author: Troels C. Petersen (NBI)
 #  Email:  petersen@nbi.dk
-#  Date:   14th of March 2016
+#  Date:   18th of February 2018
 # ------------------------------------------------------------------------ #
 
 from ROOT import *
@@ -126,10 +140,10 @@ def main() :
     # Produce mass, shape and angle values for signal:
     for isig in xrange ( Nsig ) :
 
-        x_sig.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle( 0.8, 0.2 ) ] )
-        x_all.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle( 0.8, 0.2 ) ] )
-        # x_sig.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle2( 0.9, 12.0, 1.0 ) ] )
-        # x_all.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle2( 0.9, 12.0, 1.0 ) ] )
+        # x_sig.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle( 0.8, 0.2 ) ] )
+        # x_all.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle( 0.8, 0.2 ) ] )
+        x_sig.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle2( 0.9, 12.0, 1.0 ) ] )
+        x_all.append( [ r.Gaus(  0.8, 0.2 ), r.Gaus(  0.0, 0.4 ), GetAngle2( 0.9, 12.0, 1.0 ) ] )
         for i in xrange( Nvar ) :
             hist_sig[i].Fill(x_sig[-1][i])
             hist_all[i].Fill(x_sig[-1][i])
@@ -148,10 +162,10 @@ def main() :
     # Produce mass, shape and angle values for signal:
     for ibkg in xrange ( Nbkg ) :
 
-        x_bkg.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle( -0.8, 0.2 ) ] )
-        x_all.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle( -0.8, 0.2 ) ] )
-        # x_bkg.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle2( 0.8, 17.0, 0.5 ) ] )
-        # x_all.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle2( 0.8, 17.0, 0.5 ) ] )
+        # x_bkg.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle( -0.8, 0.2 ) ] )
+        # x_all.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle( -0.8, 0.2 ) ] )
+        x_bkg.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle2( 0.8, 17.0, 0.5 ) ] )
+        x_all.append( [ r.Exp( 0.5 ), r.Gaus( -1.0, 0.6 ), GetAngle2( 0.8, 17.0, 0.5 ) ] )
         for i in xrange( Nvar ) :
             hist_bkg[i].Fill(x_bkg[-1][i])
             hist_all[i].Fill(x_bkg[-1][i])
@@ -302,7 +316,7 @@ def main() :
 
 
     # -----------------------------------------------------------------------------------
-    # Given succesful fit, calculate sWeights the produce signal distribution of "angle":
+    # Given succesful fit, calculate sWeights and produce signal distribution of "angle":
     # -----------------------------------------------------------------------------------
 
     par = []     # Abbreviation of an otherwise very long expression!
