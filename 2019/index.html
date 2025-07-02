@@ -1,0 +1,729 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="D. Jason Koskinen">
+      
+      
+        <link rel="canonical" href="https://jakob1379.github.io/AMAS/2019/">
+      
+      
+      
+        <link rel="next" href="classes/">
+      
+      
+      <link rel="icon" href="assets/Ku-ucph-logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Advanced Methods in Applied Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="styles/custom.css">
+    
+    <script>__md_scope=new URL(".",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#advanced-methods-in-applied-statistics-2019" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a style="color: #c94a53;" href="../.">
+    Click here to go to latest.
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL("."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="." title="Advanced Methods in Applied Statistics" class="md-header__button md-logo" aria-label="Advanced Methods in Applied Statistics" data-md-component="logo">
+      
+  <img src="assets/Ku-ucph-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Advanced Methods in Applied Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Home
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jakob1379/AMAS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jakob1379/AMAS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="classes/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Classes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="." title="Advanced Methods in Applied Statistics" class="md-nav__button md-logo" aria-label="Advanced Methods in Applied Statistics" data-md-component="logo">
+      
+  <img src="assets/Ku-ucph-logo.svg" alt="logo">
+
+    </a>
+    Advanced Methods in Applied Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jakob1379/AMAS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jakob1379/AMAS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="." class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#the-educators" class="md-nav__link">
+    <span class="md-ellipsis">
+      The Educators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#basic-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      Basic Information
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#evaluation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Evaluation
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Evaluation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oral-presentation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oral presentation and 1-2 page summary (10%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#graded-problem-sets" class="md-nav__link">
+    <span class="md-ellipsis">
+      Graded problem sets (20%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project" class="md-nav__link">
+    <span class="md-ellipsis">
+      Project (30%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#final-exam" class="md-nav__link">
+    <span class="md-ellipsis">
+      Final exam (40%)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extra-credit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Extra Credit (+2% to final course grade average on a 1-100% scale)
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#course-syllabus" class="md-nav__link">
+    <span class="md-ellipsis">
+      Course Syllabus
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="classes/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="advanced-methods-in-applied-statistics-2019">Advanced Methods in Applied Statistics 2019<a class="headerlink" href="#advanced-methods-in-applied-statistics-2019" title="Permanent link">&para;</a></h1>
+<h2 id="the-educators">The Educators<a class="headerlink" href="#the-educators" title="Permanent link">&para;</a></h2>
+<div class="grid cards">
+<ul>
+<li><strong>D. Jason Koskinen</strong><br />
+<em>Lecturer</em><br />
+    Email: <code>koskinen (at) nbi.ku.dk</code>
+    <a class="glightbox" href="assets/DJK.png" data-type="image" data-width="auto" data-height="auto" data-desc-position="bottom"><img align="left" alt="D. Jason Koskinen" height="160" loading="lazy" src="assets/DJK.png" /></a></li>
+<li><strong>Jean-Loup</strong>
+    <em>Teaching Assistant (2019)</em></li>
+</ul>
+</div>
+<h2 id="basic-information">Basic Information<a class="headerlink" href="#basic-information" title="Permanent link">&para;</a></h2>
+<ul>
+<li>Block 3 - Timetable A of the 2019 <a href="http://www.science.ku.dk/english/student-life/studying-at-the-faculty/academic-calendar/">academic calendar</a><ul>
+<li>Tues 08:00 - 12:00 and Thurs 08:00- 12:00 &amp; 13:00 - 17:00</li>
+<li>Actual<ul>
+<li>08:00 - 08:30 student study time for both Tues. and Thurs.</li>
+<li>08:30 - 09:00 Q&amp;A or discussion with Jason in Aud. M</li>
+<li><strong>09:00</strong> lecture on new material (not 09:05 or 09:15)</li>
+<li>On Thursday there will very often be new material starting at 13:00</li>
+<li>On Thursday it is very unlikely that any new material, lectures, or review will happen after 16:00.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Auditorium M at the Blegdamsvej campus</li>
+<li>Odd-numbered classes are 4-hours while even-numbered consist of 2 blocks of 4-hours</li>
+<li>Classes will be composed of ~20-30% lecture and demonstrations followed by exercise</li>
+<li>While assignments, projects, and exercises can be done in the programming language of the students choice, the examples and demonstrations will be mainly in Python and/or scientific packages thereof, i.e. SciPy, PyROOT, etc.</li>
+<li>Required text or textbooks: None</li>
+<li>Previous course pages:<ul>
+<li>2017 Advanced Methods in Applied Statistics <a href="../2017/">webpage</a></li>
+<li>2018 Advanced Methods in Applied Statistics <a href="../2018/">webpage</a></li>
+</ul>
+</li>
+<li>It is recommended, but not required, to have at least reviewed the little sibling to this course, i.e. "Applied Statistics - From data to results" which can be found <a href="http://www.nbi.dk/~petersen/Teaching/AppliedStatistics2017.html">here</a></li>
+</ul>
+<hr />
+<h2 id="evaluation">Evaluation<a class="headerlink" href="#evaluation" title="Permanent link">&para;</a></h2>
+<h3 id="oral-presentation">Oral presentation and 1-2 page summary (10%)<a class="headerlink" href="#oral-presentation" title="Permanent link">&para;</a></h3>
+<ul>
+<li>~10 minute summary presentation. Plan on ~7 slides if you are doing a PowerPoint-type presentation.</li>
+<li>Can work alone or in groups of up to 3.<ul>
+<li>A 1-2 page summary including any and all group members names</li>
+<li>Presentation does NOT have to be given by all group members</li>
+</ul>
+</li>
+<li>Talk or email with Jason if you have questions about the appropriateness of your article</li>
+<li>Be sure to put down which article you are using <a href="placeholder_for_2019_spreadsheet">here</a> to avoid duplication</li>
+<li>Example <a href="Slides/OralPresentationExample_FiniteMonteCarlo.pdf">presentation</a> on <a href="http://www.sciencedirect.com/science/article/pii/001046559390005W">Finite Monte Carlo article</a></li>
+<li>Other example articles (and no, you cannot use any of these articles for your report/presentation):<ul>
+<li>Frequency Difference Gating: A Multivariate Method for Identifying Subsets That Differ Between Samples (<a href="http://onlinelibrary.wiley.com/doi/10.1002/1097-0320%2820010901%2945:1%3C56::AID-CYTO1144%3E3.0.CO;2-9/epdf">article</a>)</li>
+<li>Probability binning comparison: a metric for quantitating multivariate distribution differences (<a href="http://onlinelibrary.wiley.com/doi/10.1002/1097-0320%2820010901%2945:1%3C47::AID-CYTO1143%3E3.0.CO;2-A/full">article</a>)</li>
+<li>FIREFLY MONTE CARLO: EXACT MCMC WITH SUBSETS OF DATA (<a href="http://arxiv.org/pdf/1403.5693.pdf">article</a>)</li>
+<li>This is just a small sample. Ideally, find something related to your area of research.</li>
+</ul>
+</li>
+<li>Include people names and article <a href="placeholder_for_2019_spreadsheet">here</a> by <strong>Feb. 25</strong></li>
+<li>The 1-2 page summary as a .pdf file is due via email. Submission date is <strong>March 6 by 16:00 CET</strong></li>
+<li>Presentations will be selected at random and begin during class time on March 7. At the discretion of Jason and if needed, some presentations will be postponed for a later date.</li>
+<li>If you have any questions or concerns email Jason.</li>
+</ul>
+<h3 id="graded-problem-sets">Graded problem sets (20%)<a class="headerlink" href="#graded-problem-sets" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Problem set 1 (5% of total grade)<ul>
+<li>Link to <a href="Slides/ProblemSet1.pdf">problem set assignment</a></li>
+<li>Due: Feb. 13, 2019 by 08:30 CET</li>
+</ul>
+</li>
+<li>Problem set 2 (15% of total grade)<ul>
+<li>Link to <a href="Slides/ProblemSet2_2019.pdf">Problem Set 2 assignment</a></li>
+<li>Due: March 22, 2019 by 16:00 CET</li>
+</ul>
+</li>
+</ul>
+<h3 id="project">Project (30%)<a class="headerlink" href="#project" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Similar to the oral presentation, this project focuses on using a method or statistical treatment that is nominally related to your field of research that you or your group select. Unlike the oral presentation, the project includes not just understanding and explaining the method, but also using it on a some appropriate data set of your own choosing.</li>
+<li>Can be done alone or in groups of up to 3 people</li>
+<li>The only hand-in is a 4-6 page written report. You can submit the code as well if you would like.</li>
+<li>You may start working on <strong>this right now!!</strong></li>
+</ul>
+<h3 id="final-exam">Final exam (40%)<a class="headerlink" href="#final-exam" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Must work on your own!</li>
+<li>Take home exam<ul>
+<li>28 hour between start and submission</li>
+<li>Begins at 10:00 CET on Thursday April 4, 2019</li>
+<li>The exam must be submitted by 14:00 CET on Friday April 5, 2019</li>
+</ul>
+</li>
+<li>The exam will be similar to problem set 2<ul>
+<li>A handful of more intensive questions as opposed to numerous short questions</li>
+<li>While the exam will contain problems from any portion of the course material, the focus will be more on topics in the latter portion of the course</li>
+</ul>
+</li>
+<li><a href="https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2018/ExtraProblems.pdf">Here</a> are two extra practice problems similar to what has been on the previous exams</li>
+<li>Here is a link to the <a href="https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2017/Exam.pdf">2017 exam</a></li>
+<li>Here is a link to the <a href="https://www.nbi.dk/~koskinen/Teaching/AdvancedMethodsInAppliedStatistics2018/Exam_2018.pdf">2018 exam</a></li>
+</ul>
+<h3 id="extra-credit">Extra Credit (+2% to final course grade average on a 1-100% scale)<a class="headerlink" href="#extra-credit" title="Permanent link">&para;</a></h3>
+<ul>
+<li>2019 NCAA Men's Basketball Bracket submission due by tip-off of initial 1st round game on March 21</li>
+<li>This is NOT a requirement, nor is it an obligation for the course</li>
+<li>Information can be <a href="Slides/ExtraCredit_2019.pdf">found here</a></li>
+<li>Due: Thursday March 21 by 17:00 CET</li>
+</ul>
+<hr />
+<h2 id="course-syllabus">Course Syllabus<a class="headerlink" href="#course-syllabus" title="Permanent link">&para;</a></h2>
+<p>The course is 100% likely to change once we begin, and future lectures listed below serve as an outline. Even so, we <strong>are very likely to</strong> cover the following topics which may require additional software support:</p>
+<ul>
+<li>Multivariate analysis (MVA) techniques including Boosted Decision Trees (BDTs)</li>
+<li>The MultiNest bayesian inference tool</li>
+<li>Basis splines</li>
+<li>Markov Chain Monte Carlo</li>
+<li>Likelihood minimization techniques</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+        
+          
+          <a href="classes/" class="md-footer__link md-footer__link--next" aria-label="Next: Classes">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Classes
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": ".", "features": ["content.tabs.link", "navigation.expand", "navigation.footer", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "toc.integrate"], "search": "assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>

@@ -1,10 +1,15 @@
 [
   {
-    "version": "2018",
-    "title": "2018",
+    "version": "2019",
+    "title": "2019",
     "aliases": [
       "latest"
-    ],
+    ]
+  },
+  {
+    "version": "2018",
+    "title": "2018",
+    "aliases": [],
     "properties": {
       "git_commit": "7ff975bcff3bbb5085c6bea2f0539c6b51b834d6",
       "deployed_at": "2025-07-02T06:50:22Z"
