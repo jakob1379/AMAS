@@ -4,7 +4,11 @@
     "title": "2017",
     "aliases": [
       "latest"
-    ]
+    ],
+    "properties": {
+      "git_commit": "2eb3ab88f3b4e8c2656064f3baf1f7e0cf6ff7e5",
+      "deployed_at": "2025-07-02T06:26:33Z"
+    }
   },
   {
     "version": "2016",
