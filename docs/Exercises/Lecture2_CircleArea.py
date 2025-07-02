@@ -63,15 +63,22 @@ for i in range(0, Nnumbers):
     # end if/else
 # end for i
 
+
+# Create graph obejcts in ROOT for display purposes
+
 gr_in  = TGraph( len(xpos_in), array('f', xpos_in), array('f', ypos_in))
 gr_out = TGraph( len(ypos_out), array('f', xpos_out), array('f', ypos_out))
-
 
 gr_in.SetMarkerColor(2)
 gr_in.SetMarkerStyle(20)
 
 gr_out.SetMarkerColor(4)
 gr_out.SetMarkerStyle(20)
+
+# Draw the graphs w/ the colored
+# points to denote what falls inside
+# and what falls outside the cirlce
+# equation.
 
 tCan_0 = TCanvas("can0","canvas0", 500, 500)
 gr_in.Draw("AP")

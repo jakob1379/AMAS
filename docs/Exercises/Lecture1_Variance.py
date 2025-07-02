@@ -106,8 +106,8 @@ for i in range(0,len(a)):
     print "chi-squared By hand:    ", chisq_value
     print "chi-squared From SciPy: ", stats.chisquare(observed,expected)[0]
     print "chi-squared (w/ \pm 1.22 uncertainty):    ", (chisq_valuewith)
-    print "Reduced chi-squared:    ", (chisq_value)/(len(a[i])-2)
-    print "Reduced chi-squared (w/ \pm 1.22 uncertainty):    ", (chisq_valuewith)/(len(a[i])-2)
+    print "Reduced chi-squared:    ", (chisq_value)/(len(a[i]))
+    print "Reduced chi-squared (w/ \pm 1.22 uncertainty):    ", (chisq_valuewith)/(len(a[i]))
     print "\n\n"
     
 # end for i
