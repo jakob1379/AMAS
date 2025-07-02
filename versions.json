@@ -2,14 +2,14 @@
   {
     "version": "2017",
     "title": "2017",
-    "aliases": []
+    "aliases": [
+      "latest"
+    ]
   },
   {
     "version": "2016",
     "title": "2016",
-    "aliases": [
-      "latest"
-    ],
+    "aliases": [],
     "properties": {
       "git_commit": "a831c5bb5bd745bf4beae13f8f9b182d620653eb",
       "deployed_at": "2025-07-01T13:55:54Z"
