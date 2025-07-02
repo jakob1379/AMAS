@@ -29,11 +29,12 @@ theme:
     code: Roboto Mono
   features:
     - content.tabs.link
+    - navigation.expand    
     - navigation.footer
+    - navigation.prune
     - navigation.sections
     - navigation.tabs
     - navigation.top
-    - navigation.prune
     - navigation.tracking
     - search.highlight
     - search.suggest

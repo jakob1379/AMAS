@@ -18,8 +18,8 @@ dev = [
 ]
 
 [tool.poe.tasks.deploy]
-cmd = "mike deploy --push --update-aliases ${version} latest"
-help = "Deploy a new version of the documentation and update the 'latest' alias"
+shell = "mike deploy --push --update-aliases ${version} latest --prop-set-string git_commit=\"$(git rev-parse HEAD)\" --prop-set-string deployed_at=\"$(date -u +%Y-%m-%dT%H:%M:%SZ)\""
+help = "Deploy a new version of the documentation and update the 'latest' alias, storing Git commit and deployment timestamp as properties."
 args = [
   { name = "version", options = ["--version", "-v"], help = "The version name to deploy", required = true }
 ]
