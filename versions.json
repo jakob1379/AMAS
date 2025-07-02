@@ -4,7 +4,11 @@
     "title": "2020",
     "aliases": [
       "latest"
-    ]
+    ],
+    "properties": {
+      "git_commit": "b3e89dcdc21dea20f4e5b2ce4b8f3c6dc9fd4e08",
+      "deployed_at": "2025-07-02T13:30:44Z"
+    }
   },
   {
     "version": "2019",
