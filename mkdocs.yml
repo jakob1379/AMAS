@@ -45,10 +45,17 @@ theme:
 nav:
   - Home: index.md
   - Classes: classes.md
-plugins: [search, glightbox, mike]
+plugins:
+  - search
+  - glightbox:
+      width: 100%
+      height: 100%
+      
+  - mike
 markdown_extensions:
   - pymdownx.details
   - pymdownx.tilde
+  - pymdownx.blocks.caption  
   - pymdownx.superfences
   - attr_list
   - md_in_html

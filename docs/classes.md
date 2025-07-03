@@ -4,192 +4,192 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 0 - Pre-Course (Jan. 30)
+## 0 - Optional Software Help Session (Feb. 4)
 
-* The location is Fb-6 at Blegdamsvej from 13:00-16:00
-* Take a look before the class starts (optional)
-* Get a preview with the course Teaching Assistant (James Creswell) of some software tools to install
-
----
-
-## 1 - Start (Feb. 4)
-
-* [Course Information](Slides/CourseInformation.pdf)
-* Chi-square
-* Code chi-square
-* Data for exercise 1 ([FranksNumbers.txt](data/FranksNumbers.txt))
-* Review of 'basic' statistics
-* [Lecture 1](Slides/Lecture1_Basics_ChiSquare.pdf)
-    * Jason's [python code](Exercises/Lecture1_Variance.py) for exercise 1
-    * Jean-Loup's (2019 TA) [python 3 code as a Jupyter notebook](Exercises/Lecture1_Variance_Py3.ipynb) for exercise 1
-* Be knowledgeable about the Central Limit Theorem
-* Start reading paper about how well Gaussian statistics compares to a wide selection of scientific measurements
-    * "Not Normal: the uncertainties of scientific measurements" link at [arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600)
-    * We will be discussion the paper in the next class, i.e. on Thursday
+*   13:30-16:00 with the ZOOM information in Absalon.
+*   Optional session with the Teaching Assistant (Tania Kozynets)for any students who may need assistance with their computer software setup.
+*   Get a preview with the course and some software tools to install
+*   [Some installation help slides](Slides/feb4_software_help.pdf)
 
 ---
 
-## 2 - Monte Carlo Simulation & Least Squares (Feb. 6)
+## 1 - Start (Feb. 9)
 
-* [Lecture 2](Slides/Lecture2_MC_LeastSquares.pdf)
-* Monte Carlo (reminder that lecture starts at 09:00)
-* Code for [area of the circle](Exercises/Lecture2_CircleArea.py)
-* [Example code](Exercises/Lecture2_CircleArea_Py3.ipynb) from Jean-Loup in a Jupyter notebook
-* From the "Not Normal: the uncertainties of scientific measurements" [paper](https://arxiv.org/abs/1612.00778):
-    * For the ambitious, create a 'toy monte carlo' of the sample and pair distributions for the nuclear physics data in Sec. 2.A. For simplicity assume that all the 'quantities' are gaussian distributed
-    * Write functions where you can produce multiple gaussian distributions to sample from and generate a sample of "12380 measurements, 1437 quantities, 66677 pairs".
-    * Produce the z-distribution (using eq. 4) plot for just your toy monte carlo and see if it matches a gaussian, exponential, student-t distribution, etc...
-* Least Squares lecture (starting at 13:00)
-* Some useful links
-    * [Covariance Matrix (wiki)](https://en.wikipedia.org/wiki/Covariance_matrix)
-    * [In-Depth (but still brief) least-squares write-up](http://stat.ethz.ch/~geer/bsa199_o.pdf)
-* Discussion of "Not Normal: the uncertainties of scientific measurements" ([arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600))
+*   [Course Information](Slides/CourseInformation.pdf)
+*   Chi-square
+*   Code chi-square
+*   Data for exercise 1 ([FranksNumbers.txt](data/FranksNumbers.txt))
+*   Review of 'basic' statistics
+*   [Lecture 1](Slides/Lecture1_Basics_ChiSquare.pdf)
+    *   Jean-Loup's (2019 TA) [python 3 code as a Jupyter notebook](Exercises/Lecture1_Variance_Py3.ipynb) for exercise 1
+    *   Tania's (2021 TA) [python 3 code as a Jupyter notebook](Exercises/class1_exercise1.ipynb) for exercise 1
+*   Start reading paper about how well Gaussian statistics compares to a wide selection of scientific measurements
+    *   "Not Normal: the uncertainties of scientific measurements" link at [arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600)
+    *   We will be discussion the paper in the next class, i.e. on Thursday
 
 ---
 
-## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 11)
+## 2 - Monte Carlo Simulation & Least Squares (Feb. 11)
 
-* [Lecture 3](Slides/Lecture3_General_Likelihood.pdf)
-* Maximum likelihood method
-* Gradient descent and minimizers
-* Example code for [exercise 1](Exercises/Lecture3_Exercise1.ipynb) and [exercises 2 & 3](Exercises/Lecture3_Exercises2-3.ipynb) from Jean-Loup (TA in 2018 & 2019), [Niccolo](Exercises/Lecture3_likelihood_niccolo.py) (TA in 2017), some from [Jason](Exercises/Lecture3_MLE_Cowan_clean.py) (course lecturer)
-* Remember that the first assignment is due on **Wednesday**
-
----
-
-## 4 - Intro. to Bayesian Statistics & Splines (Feb. 13)
-
-* [Lecture 4](Slides/Lecture4_Bayes.pdf) on Simple Bayesian statistics
-* Using priors, posteriors, and likelihoods
-* Example [code](Exercises/Lecture4_Bayes_1.py) for exercises from Jason
-* [Lecture 4.5](Slides/Lecture4.5_Splines.pdf)
-* Splines
-* Data files for one of the exercises.
-    * [Dust Logger data](data/DustLog_forClass.dat)
-    * [Spline cubic data](data/SplineCubic.txt)
-    * [Spline oscillation data](data/SplineOsc1.txt)
-* Interesting article about use of splines and penalty terms
-    * [Penalized splines](https://arxiv.org/pdf/1301.2184v1.pdf)
+*   [Lecture 2](Slides/Lecture2_MC_LeastSquares.pdf)
+*   Monte Carlo (reminder that lecture starts at 09:00)
+*   Code for [area of the circle](Exercises/Lecture2_CircleArea.py). Note that the code is provided for illustrative purposes, and not as a piece of code that students are expected to be able to execute without modification.
+*   [Example code](Exercises/Lecture2_CircleArea_Py3.ipynb) from Jean-Loup (2019 TA) in a Jupyter notebook
+*   [Example code](Exercises/class2_exercises.ipynb)e from Tania (2021 TA) in a Jupyter notebook
+*   From the "Not Normal: the uncertainties of scientific measurements" [paper](https://arxiv.org/abs/1612.00778):
+    *   For the ambitious, create a 'toy monte carlo' of the sample and pair distributions for the nuclear physics data in Sec. 2.A. For simplicity assume that all the 'quantities' are gaussian distributed
+    *   Write functions where you can produce multiple gaussian distributions to sample from and generate a sample of "12380 measurements, 1437 quantities, 66677 pairs".
+    *   Produce the z-distribution (using eq. 4) plot for just your toy Monte Carlo and see if it matches a gaussian, exponential, student-t distribution, etc...
+*   Discussion of "Not Normal: the uncertainties of scientific measurements" ([arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600))
+*   Included here are some [prompt questions](https://alumni-my.sharepoint.com/:w:/g/personal/xdn365_ku_dk/EdwLg4z8IEtFlK9ALvUBopABpwv4Gzs6t2uxjoWVZGqYEg?e=Y5srz5) to accompany discussion and understanding of the paper
+*   Least Squares (optional)
+*   Some useful links
+    *   [Covariance Matrix (wiki)](https://en.wikipedia.org/wiki/Covariance_matrix)
+    *   [In-Depth (but still brief) least-squares write-up](http://stat.ethz.ch/%7Egeer/bsa199_o.pdf)
 
 ---
 
-## 5 - Parameter Estimation and Confidence Intervals (Feb. 18)
+## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 16)
 
-* [Lecture 5](Slides/Lecture5_ConfidenceIntervals.pdf) Confidence intervals
-* Numerical minimizers for best-fit values
-* [Data file](data/MLE_Variance_data.txt) for one of the exercises ([extra data file](data/MLE_Variance_data_2.txt))
-* Reminder: oral presentation and 1-2 page article reports will be due/covered soon
-    * [Article about Supernova](https://arxiv.org/abs/1701.02596) first detection time. Look at the caption for the Supplementary Fig. 8
-
----
-
-## 6 - Markov Chain(s) (Feb. 20)
-
-* [Lecture 6](Slides/Lecture6_MCMC_Bayes.pdf) Markov Chain Monte Carlo (MCMC)
-* Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee, PyMC
-    * Just like minimizers, syntax and options matter
-    * Be familiar with your chosen MCMC package
-* Some example python code for the exercises (caveat emptor)
-    * [Using emcee](Exercises/Lecture6_MCMC_Example1_Niccolo.py), the solution is graciously provided by Niccolo Maffezzoli (2017 TA)
+*   [Lecture 3](Slides/Lecture3_General_Likelihood.pdf)
+*   Maximum likelihood method
+*   Gradient descent and minimizers
+*   Example code for [exercise 1](Exercises/class3_exercise1.ipynb) and [exercise 2-3](Exercises/class3_exercises2-3.ipynb) from Tania, [exercise 1](Exercises/Lecture3_Exercise1.ipynb) and [exercises 2 & 3](Exercises/Lecture3_Exercises2-3.ipynb) from Jean-Loup (TA in 2018 & 2019), [Niccolo](Exercises/Lecture3_likelihood_niccolo.py) (TA in 2017), some from [Jason](Exercises/Lecture3_MLE_Cowan_clean.py) (course lecturer)
+*   Remember that the first assignment is due on **Wednesday**
 
 ---
 
-## 7 - Hypothesis Testing (Feb. 25)
+## 4 - Intro. to Bayesian Statistics & Splines (Feb. 18)
 
-* [Lecture 7](Slides/Lecture7_HypothesisTests.pdf)
-* Likelihood ratio
-* Data files for one of the exercises. Just use the first column in each file. The second column is unimportant.
-    * [Data set 1](data/LLH_Ratio_2_data.txt)
-    * [Data set 2](data/LLH_Ratio_2a_data.txt)
-
----
-
-## 8 - Data Driven Density Estimation (non-parametric) (Feb. 27)
-
-* Kernel Density estimation
-* [Lecture 8](Slides/Lecture8_KDE.pdf)
-
----
-
-## 9 - Statistical Hypothesis Tests and Auto-Correlation (March 3)
-
-* Guest lecture by [Markus Ahlers](https://nbia.nbi.ku.dk/members/ahlers/)
-* [Lecture slides](Slides/Lecture_Ahlers2020.pdf)
-* Files and some example code
-    * Data files in .FITS format: [eventmap1.fits](data/eventmap1.fits) and [truemap1.fits](data/truemap1.fits)
-    * Some example code (all in python): [C1_produce.py](Exercises/C1_produce.py) [C1_show.py](Exercises/C1_show.py) [KS_produce.py](Exercises/KS_produce.py) [KS_show.py](Exercises/KS_show.py) [maxLH_produce.py](Exercises/maxLH_produce.py) [maxLH_show.py](Exercises/maxLH_show.py) [powerspectrum.py](Exercises/powerspectrum.py) [twopoint.py](Exercises/twopoint.py) [Ylm.py](Exercises/Ylm.py)
-* **Be sure** to have [HEALPix software](https://healpix.jpl.nasa.gov) installed on your computer. There are options for C, C++, JAVA, Python, and I see some MATLAB too.
+*   [Lecture 4](Slides/Lecture4_Bayes.pdf) on Simple Bayesian statistics
+*   Using priors, posteriors, and likelihoods
+*   Example [code](Exercises/Lecture4_Bayes_1.py) for exercises from Jason, and [example code](Exercises/class4_bayes.ipynb) from Tania
+*   [Lecture 4.5](Slides/Lecture4.5_Splines.pdf)
+*   Splines
+*   Data files for one of the exercises.
+    *   [Dust Logger data](data/DustLog_forClass.dat)
+    *   [Spline cubic data](data/SplineCubic.txt)
+    *   [Spline oscillation data](data/SplineOsc1.txt)
+*   Interesting article about use of splines and penalty terms
+    *   [Penalized splines](https://arxiv.org/pdf/1301.2184v1.pdf)
 
 ---
 
-## 10 - Presentations and Multivariate Analysis techniques (March 5)
+## 5 - Parameter Estimation and Confidence Intervals (Feb. 23)
 
-* In the morning we will have the oral presentations from the articles chosen
-    * Links to some to some of the presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations2018/), [2019](../../2019/StudentPresentations/))
-
-The Boosted Decision Tree lecture
-* Boosted Decision Trees
-* [Lecture 10](Slides/Lecture10_MVA.pdf)
-* Data
-    * Exercise 1 ([training signal](data/BDT_signal_train.txt), [training background](data/BDT_background_train.txt), [testing signal](data/BDT_signal_test.txt), [testing background](data/BDT_background_test.txt))
-    * Exercise 2 (16 variable [file](data/BDT_16var.txt))
-        * The first column is the index, hence there are 17 'variables', but the index variable only for book keeping and has no impact on whether an event is signal or background.
-        * Every even row is the 'signal' and every odd row is the 'background'. Thus, there are two rows for each index in the first column: the first is the signal and the second is the background. [Format is odd, but I got it from a colleague].
-    * Here is the solution data sets separated into two files ([benign](data/benign_true.txt) and [malignant](data/malignant_true.txt)) for the last exercise of the lecture. Here is also the [(python) code](Exercises/Exam2_Problem_BDT_CheckSolutions_2016.py) that I used to establish the efficiency for all the submissions from all the students
+*   [Lecture 5](Slides/Lecture5_ConfidenceIntervals.pdf) Confidence intervals
+*   Numerical minimizers for best-fit values
+*   [Data file](data/MLE_Variance_data.txt) for one of the exercises ([extra data file](data/MLE_Variance_data_2.txt))
+*   Reminder: oral presentation and 1-2 page article reports will be due/covered soon
+    *   [Article about Supernova](https://arxiv.org/abs/1701.02596) first detection time. Look at the caption for the Supplementary Fig. 8
 
 ---
 
-## 11 - Neural likelihood-free inference (March 10)
+## 6 - Markov Chain(s) (Feb. 25)
 
-* Guest Lecture by [Christoph Weniger](http://christophweniger.com)
-* [lecture notes](https://cweniger.github.io/teaching-2003-NBI-ML-lectures/lecture1.html)
-* Introduction to simple deep feed-forward networks
-* Parameter regression
-* Regression of likelihood-to-evidence ratios
-
----
-
-## 12 - Continuation of likelihood-free inference (March 12)
-
-* Guest lecture by [Christoph Weniger](http://christophweniger.com)
-* [lecture notes](https://cweniger.github.io/teaching-2003-NBI-ML-lectures/lecture1.html)
-* Introduction to simple deep feed-forward networks
-* Parameter regression
-* Regression of likelihood-to-evidence ratios
+*   [Lecture 6](Slides/Lecture6_MCMC_Bayes.pdf) Markov Chain Monte Carlo (MCMC)
+*   Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee, PyMC
+    *   Just like minimizers, syntax and options matter
+    *   Be familiar with your chosen MCMC package
+*   Some example python code for the exercises (caveat emptor)
+    *   [Using emcee](Exercises/Lecture6_MCMC_Example1_Niccolo.py), the solution is graciously provided by Niccolo Maffezzoli (2017 TA)
 
 ---
 
-## 13 - Nested Sampling, Bayesian Inference, and MultiNest (March 17)
+## 7 - Hypothesis Testing (March 2)
 
-* [Lecture 13](Slides/Lecture13_MultiNest.pdf)
-* External packages for conducting nested sampling, e.g. MultiNest, are necessary and some python options are:
-    * pymultinest ([https://johannesbuchner.github.io/PyMultiNest/](https://johannesbuchner.github.io/PyMultiNest/))
-    * nestle ([http://kbarbary.github.io/nestle/](http://kbarbary.github.io/nestle/))
-    * SuperBayeS ([http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html](http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html))
-* Very good articles that are easy to read
-    * Excellent and readable paper by developer John Skilling on nested sampling ([http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf](http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf))
-        * **Read up until** the section "The Density of States"
-    * MultiNest academic papers
-        * [http://arxiv.org/abs/0809.3437](http://arxiv.org/abs/0809.3437)
-        * [http://arxiv.org/abs/1306.2144](http://arxiv.org/abs/1306.2144)
+*   [Lecture 7](Slides/Lecture7_HypothesisTests.pdf)
+*   Likelihood ratio
+*   Data files for one of the exercises. Just use the first column in each file. The second column is unimportant.
+    *   [Data set 1](data/LLH_Ratio_2_data.txt)
+    *   [Data set 2](data/LLH_Ratio_2a_data.txt)
 
 ---
 
-## 14 - Work on Project (no lecture or new material - March 19)
+## 8 - Data Driven Density Estimation (non-parametric) (March 4)
 
-* No new lecture or new material.
+*   Kernel Density estimation
+*   [Lecture 8](Slides/Lecture8_KDE.pdf)
 
 ---
 
-## 15 - Course Review, and Non-Parametric Tests Lecture snippet (March 24)
+## 9 - Statistical Hypothesis Tests and Auto-Correlation (March 9)
 
-* [Lecture 15](Slides/Lecture15_Nonparameteric.pdf) (EXTRA)
-    * Kolmogorov-Smirnov, Anderson-Darling, and Mann-Whitney U tests
-    * *Won't be be covered in class*
-    * Topics include things that may be useful for research
+*   [Lecture slides](Slides/Lecture_AhlersKoskinen2021.pdf)
+*   Files and some example code
+    *   Data files in .FITS format: [eventmap1.fits](data/eventmap1.fits) and [truemap1.fits](data/truemap1.fits)
+    *   Some example code (all in python): [C1_produce.py](Exercises/C1_produce.py) [C1_show.py](Exercises/C1_show.py) [KS_produce.py](Exercises/KS_produce.py) [KS_show.py](Exercises/KS_show.py) [maxLH_produce.py](Exercises/maxLH_produce.py) [maxLH_show.py](Exercises/maxLH_show.py) [powerspectrum.py](Exercises/powerspectrum.py) [twopoint.py](Exercises/twopoint.py) [Ylm.py](Exercises/Ylm.py)
+*   **Be sure** to have [HEALPix software](https://healpix.jpl.nasa.gov) installed on your computer, or some other spherical surface pixelization software. There are options for C, C++, JAVA, Python, and I see some for MATLAB too.
+
+---
+
+## 10 - Presentations and Multivariate Analysis techniques (March 11)
+
+*   In the morning we will have the presentations from the articles chosen.
+    *   The class will be split 50:50 and hosted in two different ZOOM sessions. One session will be moderated by Jason, and the other will be moderated by Tania. Both sessions will be recorded and available in Absalon.
+    *   Links to some to some of the previous presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations2018/), [2019](../../2019/StudentPresentations/))
+
+The Boosted Decision Trees
+
+*   [Lecture 10](Slides/Lecture10_MVA.pdf)
+*   Data
+    *   Exercise 1 ([training signal](data/BDT_signal_train.txt), [training background](data/BDT_background_train.txt), [testing signal](data/BDT_signal_test.txt), [testing background](data/BDT_background_test.txt))
+    *   Exercise 2 (16 variable [file](data/BDT_16var.txt))
+        *   The first column is the index, hence there are 17 'variables', but the index variable only for book keeping and has no impact on whether an event is signal or background.
+        *   Every even row is the 'signal' and every odd row is the 'background'. Thus, there are two rows for each index in the first column: the first is the signal and the second is the background. [Format is odd, but I got it from a colleague].
+    *   Here is the solution data sets separated into two files ([benign](data/benign_true.txt) and [malignant](data/malignant_true.txt)) for the last exercise of the lecture. Here is also the [(python) code](Exercises/Exam2_Problem_BDT_CheckSolutions_2016.py) that I used to establish the efficiency for all the submissions from all the students
+
+---
+
+## 11 - Subthreshold Anomaly Detection - Merged Bins (March 16)
+
+*   Guest Lecture by Jason & Tania
+    *   [Part 1](Slides/Lecture11_MergedBins.pdf) from Jason
+    *   [Part 2](https://alumni-my.sharepoint.com/:b:/g/personal/xdn365_ku_dk/EeuCSunalXNOpY95vKgfhswBSjzk_RzlIdgTYACUxwlQ9w?e=DVNZQV) from Tania ([different link](Slides/merged_bin_lecture.pdf) )
+
+---
+
+## 12 - Work on Project (March 18)
+
+*   No new material.
+*   Informal and optional review of selected course material in the morning session.
+*   No afternoon session
+
+---
+
+## 13 - Nested Sampling, Bayesian Inference, and MultiNest (March 23)
+
+*   [Lecture 13](Slides/Lecture13_MultiNest.pdf)
+*   External packages for conducting nested sampling, e.g. MultiNest, are necessary and some python options are:
+    *   pymultinest ([https://johannesbuchner.github.io/PyMultiNest/](https://johannesbuchner.github.io/PyMultiNest/))
+    *   nestle ([http://kbarbary.github.io/nestle/](http://kbarbary.github.io/nestle/))
+    *   UltraNest ([https://johannesbuchner.github.io/UltraNest/index.html](https://johannesbuchner.github.io/UltraNest/index.html))
+    *   SuperBayeS ([http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html](http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html))
+*   Very good articles that are easy to read
+    *   Excellent and readable paper by developer John Skilling on nested sampling ([http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf](http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf))
+        *   **Read up until** the section "The Density of States"
+    *   MultiNest academic papers
+        *   [http://arxiv.org/abs/0809.3437](http://arxiv.org/abs/0809.3437)
+        *   [http://arxiv.org/abs/1306.2144](http://arxiv.org/abs/1306.2144)
+
+---
+
+## 14 - Work on Project (no lecture or new material - March 25)
+
+*   No new lecture or new material.
+
+---
+
+## 15 - Course Review, and Non-Parametric Tests Lecture snippet (April 6)
+
+*   [Review and recap](Slides/Lecture_Review.pdf) of a few topics covered in the course
+*   [Lecture 15](Slides/Lecture15_Nonparameteric.pdf) (EXTRA)
+    *   Kolmogorov-Smirnov, Anderson-Darling, and Mann-Whitney U tests
+    *   *Won't be be covered in class*
+    *   Topics include things that may be useful for research
 
 ---
 
 Extra Projects of a more difficult nature, for those who want something more challenging.
 
-* [Parameter Goodness-of-fit](Slides/ProblemFromMIT.pdf) (PG) in Global physics fits
+*   [Parameter Goodness-of-fit](Slides/ProblemFromMIT.pdf) (PG) in Global physics fits
