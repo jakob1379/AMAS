@@ -2,21 +2,15 @@
 
 Class notes will be posted here on this webpage as they become available.
 
----
+## Optional Software Help Session (Jan. 27)
 
-## 0 - Optional Software Help Session (Feb. 3)
-
-*   13:00-15:30 on ZOOM
-*   [ZOOM link](https://ucph-ku.zoom.us/j/62900144067?pwd=VGdCd2lWcDU5MjBrQXkzZFZqT3NNdz09)
-*   Meeting ID: 629 0014 4067
-*   Passcode: 675423
-*   Optional session with the Teaching Assistant (Tania Kozynets)for any students who may need assistance with their computer software setup.
-*   Get a preview with the course and some software tools to install
-*   [software slides](Slides/amas2022_feb3_software_help.pdf)
+*   13:00-16:00 in room 4-0-17 at DIKU
+*   Optional session with the Teaching Assistant ( "Juno" Chung Lung Chan) for any students who may need assistance with their computer software setup.
+*   Get a preview with the course and some software tools to install.
 
 ---
 
-## 1 - Start (Feb. 8)
+## 1 - Start (Feb. 7)
 
 *   [Course Information](Slides/CourseInformation.pdf)
 *   Chi-square
@@ -28,23 +22,23 @@ Class notes will be posted here on this webpage as they become available.
     *   Tania's (2021 TA) [python 3 code as a Jupyter notebook](Exercises/class1_exercise1.ipynb) for exercise 1
 *   Start reading paper about how well Gaussian statistics compares to a wide selection of scientific measurements
     *   "Not Normal: the uncertainties of scientific measurements" link at [arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600)
-    *   We will be discussion the paper in the next class, i.e. on Thursday
+    *   We will be discussing the paper in the next class, i.e. on Thursday
 
 ---
 
-## 2 - Monte Carlo Simulation & Least Squares (Feb. 10)
+## 2 - Monte Carlo Simulation & Least Squares (Feb. 9)
 
 *   [Lecture 2](Slides/Lecture2_MC_LeastSquares.pdf)
 *   Monte Carlo (reminder that lecture starts at 09:00)
 *   Code for [area of the circle](Exercises/Lecture2_CircleArea.py). Note that the code is provided for illustrative purposes, and not as a piece of code that students are expected to be able to execute without modification.
 *   [Example code](Exercises/Lecture2_CircleArea_Py3.ipynb) from Jean-Loup (2019 TA) in a Jupyter notebook
-*   [Example code](Exercises/class2_exercises.ipynb)e from Tania (2021 TA) in a Jupyter notebook
+*   [Example code](Exercises/class2_exercises.ipynb) from Tania (2021 TA) in a Jupyter notebook
 *   From the "Not Normal: the uncertainties of scientific measurements" [paper](https://arxiv.org/abs/1612.00778):
-    *   For the ambitious, create a 'toy monte carlo' of the sample and pair distributions for the nuclear physics data in Sec. 2.A. For simplicity assume that all the 'quantities' are gaussian distributed
+    *   For the ambitious, create a 'toy monte carlo' of the sample and pair distributions for the nuclear physics data in Sec. 2.A. For simplicity assume that all the 'quantities' are gaussian distributed.
     *   Write functions where you can produce multiple gaussian distributions to sample from and generate a sample of "12380 measurements, 1437 quantities, 66677 pairs".
-    *   Produce the z-distribution (using eq. 4) plot for just your toy Monte Carlo and see if it matches a gaussian, exponential, student-t distribution, etc...
+    *   Produce the z-distribution (using Eq. 4) plot for just your toy Monte Carlo and see if it matches a gaussian, exponential, student-t distribution, etc...
 *   Discussion of "Not Normal: the uncertainties of scientific measurements" ([arXiv](https://arxiv.org/abs/1612.00778) or [DOI](http://rsos.royalsocietypublishing.org/content/4/1/160600))
-*   Included here are some [prompt questions](https://alumni-my.sharepoint.com/:w:/g/personal/xdn365_ku_dk/EdwLg4z8IEtFlK9ALvUBopABpwv4Gzs6t2uxjoWVZGqYEg?e=Y5srz5) to accompany discussion and understanding of the paper
+*   Included here are some [prompt questions](https://alumni-my.sharepoint.com/:w:/g/personal/xdn365_ku_dk/EQqplhQcBi5AgoDX5K92HfQBQon-bJvNZmn_SQzxvEUshQ?e=VTH9AJ) to accompany discussion and understanding of the paper
 *   Least Squares (optional)
 *   Some useful links
     *   [Covariance Matrix (wiki)](https://en.wikipedia.org/wiki/Covariance_matrix)
@@ -52,7 +46,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 15)
+## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 14)
 
 *   [Lecture 3](Slides/Lecture3_General_Likelihood.pdf)
 *   Maximum likelihood method
@@ -61,7 +55,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 4 - Intro. to Bayesian Statistics & Splines (Feb. 17)
+## 4 - Intro. to Bayesian Statistics & Splines (Feb. 16)
 
 *   [Lecture 4](Slides/Lecture4_Bayes.pdf) on Simple Bayesian statistics
 *   Using priors, posteriors, and likelihoods
@@ -77,20 +71,21 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 5 - Parameter Estimation and Confidence Intervals (Feb. 22)
+## 5 - Parameter Estimation and Confidence Intervals (Feb. 21)
 
 *   [Lecture 5](Slides/Lecture5_ConfidenceIntervals.pdf) Confidence intervals
 *   Numerical minimizers for best-fit values
-*   [Data file](data/MLE_Variance_data.txt) for one of the exercises ([extra data file](data/MLE_Variance_data_2.txt))
+*   [Data file](data/ParameterEstimation_Ex1.txt) for exercise 1
+*   [Data file](data/MLE_Variance_data.txt) for exercise 3 ([extra data file](data/MLE_Variance_data_2.txt))
 *   Reminder: oral presentation and 1-2 page article reports will be due soon
     *   [Article about Supernova](https://arxiv.org/abs/1701.02596) first detection time. Look at the caption for the Supplementary Fig. 8
 
 ---
 
-## 6 - Markov Chain(s) (Feb. 24)
+## 6 - Markov Chain(s) (Feb. 23)
 
 *   [Lecture 6](Slides/Lecture6_MCMC_Bayes.pdf) Markov Chain Monte Carlo (MCMC)
-*   Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee, PyMC
+*   Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee
     *   Just like minimizers, syntax and options matter
     *   Be familiar with your chosen MCMC package
 *   Some example python code for the exercises (caveat emptor)
@@ -98,7 +93,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 7 - Hypothesis Testing (March 1)
+## 7 - Hypothesis Testing (Feb. 28)
 
 *   [Lecture 7](Slides/Lecture7_HypothesisTests.pdf)
 *   Likelihood ratio
@@ -108,41 +103,30 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 8 - Guest Lecture by Christoph Weniger (morning) & Data Driven Density Estimation (afternoon) (March 3)
+## 8 - Independent work (March 2)
 
-*   Guest Lecture Neural Networks and Likelihood free inference part 1 (morning)
-    *   [Google collab notebook 1](https://colab.research.google.com/drive/1KwdzxHxza-uVb1l30UzgYffcADkcu54v?usp=sharing=sharing)
-    *   [Google collab notebook 2](https://colab.research.google.com/drive/1I8UcgA4Uw3jHLIlhek0Jc26U-BdEIo1k?usp=sharing)
-    *   [Lecture Slides 1](https://cweniger.github.io/teaching-2203-ML-at-NBI/lecA.html)
-    *   [Lecture Slides 2](https://cweniger.github.io/teaching-2203-ML-at-NBI/lecB.html)
-*   Kernel Density estimation (afternoon)
-*   [Lecture 8](Slides/Lecture8_KDE.pdf)
+*   No new lecture material.
+*   Time to work on presentation and/or write-up.
+*   Jason and Juno will be around (in some combination), from 8:30-15:30 in the classroom.
 
 ---
 
-## 9 - Guest Lecture by Christoph Weniger (March 8)
+## 9 - TBD (March 7)
 
-*   Guest Lecture - Neural Networks and Likelihood free inference part 2
-    *   [Google collab notebook 3](https://colab.research.google.com/drive/1__GyA2pgk5JAwcbxP15qfYD73owa6XPE?usp=sharing)
-    *   under "Edit" you can go to "Notebook Settings" and turn on GPU hardware, if that option is not already selected
-    *   [Lecture Slides 3](https://cweniger.github.io/teaching-2203-ML-at-NBI/lecC.html)
-    *   [Lecture Slides 4](https://cweniger.github.io/teaching-2203-ML-at-NBI/lecD.html)
-*   Relevant papers:
-    *   [https://arxiv.org/abs/2107.01214](https://arxiv.org/abs/2107.01214)
-    *   [https://arxiv.org/abs/2111.08030](https://arxiv.org/abs/2111.08030)
-    *   From Christoph "There are quite a few papers in the pipeline, including some more pedagogical introduction, but that might still require 6 months or more."
+*   Maybe something new, but if so the topic would not be part of an assignment or on the final exam.
+*   Will likely be one of:
+    *   Independent work session
+    *   Topic about sub-threshold anomaly detection in binned data
+    *   Pre-recorded video (available on Absalon) with more content about p-values.
 
 ---
 
-## 10 - Presentations and Multivariate Analysis techniques (March 10)
+## 10 - Presentations and Multivariate Analysis techniques (March 9)
 
 *   In the morning we are likely to have the presentations from the articles chosen.
-    *   Hopefully the presentations can occur in person
-    *   The presenations will be simulcast over ZOOM
-        *   [ZOOM link](https://ucph-ku.zoom.us/j/62213703777?pwd=SkM4UWo1blRLVTV4TUJ2TUVsdmNtUT09)
-        *   Meeting ID: 622 1370 3777 Passcode: 694897
-    *   Links to some to some of the previous presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations/), [2019](../../2019/StudentPresentations/))
-    *   This years presentations can be found at [2022](./StudentPresentations.md)
+    *   The class will be split in half, with one session being chaired by Jason and the other session chaired by Chun
+    *   Links to some to some of the previous presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations/), [2019](../../2019/StudentPresentations/), [2022](../../2022/StudentPresentations/))
+    *   This years presentations can be found at [2023](./StudentPresentations.md)
 
 **The Boosted Decision Trees**
 
@@ -156,24 +140,32 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 11 - Work on Project (March 15)
+## Kernel Density Estimator
 
-*   No new material.
-*   Jason will be in the classroom for any discussion about assignments or course material
+*   [KDE Lecture Slides](Slides/Lecture_KDE.pdf)
+*   On Absalon there is a video in the "Media Gallery" tab for a lecture on using Kernel Density Estimators. The slides will be slightly different than what is linked here, but the lecture content remains very similar and relevant.
 
 ---
 
-## 12 - Statistical Hypothesis Tests and Auto-Correlation (March 17)
+## 11 - Work on Project (March 14)
 
-*   [Lecture slides](Slides/Lecture_AhlersKoskinen2022.pdf)
+*   No new material.
+*   Unfortunately neither Jason nor Juno will be availabe in person, but may be available via Slack or email.
+
+---
+
+## 12 - Statistical Hypothesis Tests and Auto-Correlation (March 16)
+
+*   [Lecture slides](Slides/Lecture_AhlersKoskinen2023.pdf)
 *   Files and some example code
     *   Data files in .FITS format: [eventmap1.fits](data/eventmap1.fits) and [truemap1.fits](data/truemap1.fits)
+    *   Some example code (all in python): [C1_produce.py](Exercises/C1_produce.py) [C1_show.py](Exercises/C1_show.py) [KS_produce.py](Exercises/KS_produce.py) [KS_show.py](Exercises/KS_show.py) [maxLH_produce.py](Exercises/maxLH_produce.py) [maxLH_show.py](Exercises/maxLH_show.py) [powerspectrum.py](Exercises/powerspectrum.py) [twopoint.py](Exercises/twopoint.py) [Ylm.py](Exercises/Ylm.py)
 *   **It is recommended (but not necessary)** to have [HEALPix software](https://healpix.jpl.nasa.gov) installed on your computer, or some other spherical surface pixelization software. There are options for C, C++, JAVA, Python, and I see some for MATLAB too. You will be expected to draw plots/graphs using spherical projections, e.g. mollweide maps.
 *   No afternoon session
 
 ---
 
-## 13 - Nested Sampling, Bayesian Inference, and MultiNest (March 22)
+## 13 - Nested Sampling, Bayesian Inference, and MultiNest (March 21)
 
 *   [Lecture 13](Slides/Lecture13_MultiNest.pdf)
 *   External packages for conducting nested sampling, e.g. MultiNest, are necessary and some python options are:
@@ -190,21 +182,20 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 14 - Work on Project (no lecture or new material - March 24)
-
-*   No new lecture or new material.
+## 14 - Work on Project (no lecture or new material - March 23)
 
 ---
 
-## 15 - Course Review, and Non-Parametric Tests Lecture snippet (March 29)
+## 15 - Course Review, and Non-Parametric Tests Lecture snippet (March 28)
 
 *   [Review and recap](Slides/Lecture_Review.pdf) of a few topics covered in the course
+*   [2016 Exam Solutions](Slides/AMAS_2016_Exam_solutions.pdf)
+*   No solutions will be posted for the 2017
+
 *   [Lecture 15](Slides/Lecture15_Nonparameteric.pdf) (EXTRA)
     *   Kolmogorov-Smirnov, Anderson-Darling, and Mann-Whitney U tests
     *   *Won't be be covered in class*
     *   Topics include things that may be useful for research
-
----
 
 Extra Projects of a more difficult nature, for those who want something more challenging.
 
