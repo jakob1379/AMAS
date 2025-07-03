@@ -22,9 +22,7 @@
   {
     "version": "2023",
     "title": "2023",
-    "aliases": [
-      "latest"
-    ],
+    "aliases": [],
     "properties": {
       "git_commit": "7bfc9ef7b5a55cd87e46c684ebc8e4458e43b387",
       "deployed_at": "2025-07-03T13:08:22Z"
@@ -33,10 +31,12 @@
   {
     "version": "2022",
     "title": "2022",
-    "aliases": [],
+    "aliases": [
+      "latest"
+    ],
     "properties": {
-      "git_commit": "49c4123004613ddbba5fe30c5ebe4ada29da566e",
-      "deployed_at": "2025-07-03T10:24:10Z"
+      "git_commit": "503694db4e95736b1584d35d7d4e1bda2969ee4e",
+      "deployed_at": "2025-07-03T13:08:26Z"
     }
   },
   {
