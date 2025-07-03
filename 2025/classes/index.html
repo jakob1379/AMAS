@@ -1,0 +1,891 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+        <meta name="author" content="D. Jason Koskinen">
+      
+      
+        <link rel="canonical" href="https://jakob1379.github.io/AMAS/2025/classes/">
+      
+      
+        <link rel="prev" href="..">
+      
+      
+      
+      <link rel="icon" href="../assets/Ku-ucph-logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Classes - Advanced Methods in Applied Statistics</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../styles/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+   <link href="../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+    html.glightbox-open { overflow: initial; height: 100%; }
+    .gslide-title { margin-top: 0px; user-select: text; }
+    .gslide-desc { color: #666; user-select: text; }
+    .gslide-image img { background: white; }
+    .gscrollbar-fixer { padding-right: 15px; }
+    .gdesc-inner { font-size: 0.75rem; }
+    body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+    body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+    body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}</style> <script src="../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="grey">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#classes" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+          <aside class="md-banner md-banner--warning">
+            <div class="md-banner__inner md-grid md-typeset">
+              
+  You're not viewing the latest version.
+  <a style="color: #c94a53;" href="../..">
+    Click here to go to latest.
+  </a>
+
+            </div>
+            <script>var el=document.querySelector("[data-md-component=outdated]"),base=new URL(".."),outdated=__md_get("__outdated",sessionStorage,base);!0===outdated&&el&&(el.hidden=!1)</script>
+          </aside>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Advanced Methods in Applied Statistics" class="md-header__button md-logo" aria-label="Advanced Methods in Applied Statistics" data-md-component="logo">
+      
+  <img src="../assets/Ku-ucph-logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Advanced Methods in Applied Statistics
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Classes
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="white" data-md-color-accent="grey"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="red" data-md-color-accent="grey"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/jakob1379/AMAS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jakob1379/AMAS
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Home
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    <li class="md-tabs__item md-tabs__item--active">
+      <a href="./" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Classes
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+  
+
+<nav class="md-nav md-nav--primary md-nav--lifted md-nav--integrated" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Advanced Methods in Applied Statistics" class="md-nav__button md-logo" aria-label="Advanced Methods in Applied Statistics" data-md-component="logo">
+      
+  <img src="../assets/Ku-ucph-logo.svg" alt="logo">
+
+    </a>
+    Advanced Methods in Applied Statistics
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/jakob1379/AMAS" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    jakob1379/AMAS
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Classes
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#optional-software-help-session-jan-29" class="md-nav__link">
+    <span class="md-ellipsis">
+      Optional Software Help Session (Jan. 29)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#1-start-feb-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      1 - Start (Feb. 4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#2-monte-carlo-simulation-least-squares-feb-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      2 - Monte Carlo Simulation &amp; Least Squares (Feb. 6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#3-introduction-to-likelihoods-and-numerical-minimizers-feb-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#4-intro-to-bayesian-statistics-splines-feb-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      4 - Intro. to Bayesian Statistics &amp; Splines (Feb. 13)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#5-parameter-estimation-and-confidence-intervals-feb-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      5 - Parameter Estimation and Confidence Intervals (Feb. 18)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6-markov-chains-feb-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      6 - Markov Chain(s) (Feb. 20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7-hypothesis-testing-feb-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      7 - Hypothesis Testing (Feb. 25)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#8-kernel-density-estimator-feb-27" class="md-nav__link">
+    <span class="md-ellipsis">
+      8 - Kernel Density Estimator (Feb. 27)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#9-independent-work-march-4" class="md-nav__link">
+    <span class="md-ellipsis">
+      9 - Independent Work (March 4)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#10-presentations-and-multivariate-analysis-techniques-march-6" class="md-nav__link">
+    <span class="md-ellipsis">
+      10 - Presentations and Multivariate Analysis techniques (March 6)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#11-statistical-hypothesis-tests-and-auto-correlation-march-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      11 - Statistical Hypothesis Tests and Auto-Correlation (March 11)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#12-work-on-project-march-13" class="md-nav__link">
+    <span class="md-ellipsis">
+      12 - Work on Project (March 13)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#13-work-on-project-march-18" class="md-nav__link">
+    <span class="md-ellipsis">
+      13 - Work on Project (March 18)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#14-nested-sampling-bayesian-inference-and-multinest-march-20" class="md-nav__link">
+    <span class="md-ellipsis">
+      14 - Nested Sampling, Bayesian Inference, and MultiNest (March 20)
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#15-course-review-non-parametric-tests-lecture-slides-brief-p-value-slides-march-25" class="md-nav__link">
+    <span class="md-ellipsis">
+      15 - Course Review, Non-Parametric Tests Lecture slides, Brief p-value slides (March 25)
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="classes">Classes<a class="headerlink" href="#classes" title="Permanent link">&para;</a></h1>
+<p>Class notes will be posted here on this webpage as they become available.</p>
+<h2 id="optional-software-help-session-jan-29">Optional Software Help Session (Jan. 29)<a class="headerlink" href="#optional-software-help-session-jan-29" title="Permanent link">&para;</a></h2>
+<ul>
+<li>14:00 - 16:30 in NBB 02.3.I.164</li>
+<li>Optional session with the Teaching Assistant (Preet Bhanjan Pati) for any students who may need assistance with their computer software setup.</li>
+<li>Get a preview with the course and some software tools to install.</li>
+</ul>
+<hr />
+<h2 id="1-start-feb-4">1 - Start (Feb. 4)<a class="headerlink" href="#1-start-feb-4" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/CourseInformation.pdf">Course Information</a></li>
+<li>Chi-square</li>
+<li>Code chi-square</li>
+<li>Data for exercise 1 (<a href="../data/FranksNumbers.txt">FranksNumbers.txt</a>)</li>
+<li>Data for extra part of exercise 1 (<a href="../data/aruj.txt">aruj.txt</a>)</li>
+<li>Review of 'basic' statistics</li>
+<li><a href="../Slides/Lecture1_Basics_ChiSquare.pdf">Lecture 1</a><ul>
+<li>Jean-Loup's (2019 TA) <a href="../Exercises/Lecture1_Variance_Py3.ipynb">python 3 code as a Jupyter notebook</a> for exercise 1</li>
+<li>Tania's (2021 TA) <a href="../Exercises/class1_exercise1.ipynb">python 3 code as a Jupyter notebook</a> for exercise 1</li>
+<li>Jason's (2025 code) <a href="../Exercises/Lecture1_Variance_DJK.ipynb">Jupyter notebook</a> for the data from the extra part of exercise 1</li>
+</ul>
+</li>
+<li>Start reading paper about how well Gaussian statistics compares to a wide selection of scientific measurements<ul>
+<li>"Not Normal: the uncertainties of scientific measurements" link at <a href="https://arxiv.org/abs/1612.00778">arXiv</a> or <a href="http://rsos.royalsocietypublishing.org/content/4/1/160600">DOI</a></li>
+<li>We will be discussing the paper in the next class, i.e. on Thursday</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="2-monte-carlo-simulation-least-squares-feb-6">2 - Monte Carlo Simulation &amp; Least Squares (Feb. 6)<a class="headerlink" href="#2-monte-carlo-simulation-least-squares-feb-6" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture2_MC_LeastSquares.pdf">Lecture 2</a></li>
+<li>Monte Carlo (reminder that lecture starts at 09:00)</li>
+<li>Code for <a href="../Exercises/Lecture2_CircleArea.py">area of the circle</a>. Note that the code is provided for illustrative purposes, and not as a piece of code that students are expected to be able to execute without modification.</li>
+<li><a href="../Exercises/Lecture2_CircleArea_Py3.ipynb">Example code</a> from Jean-Loup (2019 TA) in a Jupyter notebook</li>
+<li><a href="../Exercises/class2_exercises.ipynb">Example code</a> from Tania (2021 TA) in a Jupyter notebook</li>
+<li>From the "Not Normal: the uncertainties of scientific measurements" <a href="https://arxiv.org/abs/1612.00778">paper</a>:<ul>
+<li>For the ambitious, create a 'toy monte carlo' of the sample and pair distributions for the nuclear physics data in Sec. 2.A. For simplicity assume that all the 'quantities' are gaussian distributed.</li>
+<li>Write functions where you can produce multiple gaussian distributions to sample from and generate a sample of "12380 measurements, 1437 quantities, 66677 pairs".</li>
+<li>Produce the z-distribution (using Eq. 4) plot for just your toy Monte Carlo and see if it matches a gaussian, exponential, student-t distribution, etc...</li>
+</ul>
+</li>
+<li>Discussion of "Not Normal: the uncertainties of scientific measurements" (<a href="https://arxiv.org/abs/1612.00778">arXiv</a> or <a href="http://rsos.royalsocietypublishing.org/content/4/1/160600">DOI</a>)</li>
+<li>Included here are some <a href="https://alumni-my.sharepoint.com/:w:/g/personal/xdn365_ku_dk/ETtDngnFIw5MtMwkhKDw3FkBKHW8uEgoDcVz5s71CgHGow?e=gegMP6">prompt questions</a> to accompany discussion and understanding of the paper</li>
+<li>Least Squares (optional)</li>
+<li>Some useful links<ul>
+<li><a href="https://en.wikipedia.org/wiki/Covariance_matrix">Covariance Matrix (wiki)</a></li>
+<li><a href="http://stat.ethz.ch/%7Egeer/bsa199_o.pdf">In-Depth (but still brief) least-squares write-up</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="3-introduction-to-likelihoods-and-numerical-minimizers-feb-11">3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 11)<a class="headerlink" href="#3-introduction-to-likelihoods-and-numerical-minimizers-feb-11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture3_General_Likelihood.pdf">Lecture 3</a></li>
+<li>Maximum likelihood method</li>
+<li>Gradient descent and minimizers</li>
+<li>Example code for <a href="../Exercises/class3_exercise1.ipynb">exercise 1</a> and <a href="../Exercises/class3_exercises2-3.ipynb">exercise 2-3</a> from Tania (TA in 2021 &amp; 2022), <a href="../Exercises/Lecture3_Exercise1.ipynb">exercise 1</a> and <a href="../Exercises/Lecture3_Exercises2-3.ipynb">exercises 2 &amp; 3</a> from Jean-Loup (TA in 2018 &amp; 2019), <a href="../Exercises/Lecture3_likelihood_niccolo.py">Niccolo</a> (TA in 2017), some from <a href="../Exercises/Lecture3_MLE_Cowan_clean.py">Jason</a> (course lecturer)</li>
+</ul>
+<hr />
+<h2 id="4-intro-to-bayesian-statistics-splines-feb-13">4 - Intro. to Bayesian Statistics &amp; Splines (Feb. 13)<a class="headerlink" href="#4-intro-to-bayesian-statistics-splines-feb-13" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture4_Bayes.pdf">Lecture 4</a> on Simple Bayesian statistics</li>
+<li>Using priors, posteriors, and likelihoods</li>
+<li>Example <a href="../Exercises/Lecture4_Bayes_1.py">code</a> for exercises from Jason, and <a href="../Exercises/class4_bayes.ipynb">example code</a> from Tania</li>
+<li><a href="../Slides/Lecture4.5_Splines.pdf">Lecture 4.5</a></li>
+<li>Splines</li>
+<li>Data files for one of the exercises.<ul>
+<li><a href="../data/DustLog_forClass.dat">Dust Logger data</a></li>
+<li><a href="../data/SplineCubic.txt">Spline cubic data</a></li>
+<li><a href="../data/SplineOsc1.txt">Spline oscillation data</a></li>
+</ul>
+</li>
+<li>Interesting article about use of splines and penalty terms<ul>
+<li><a href="https://arxiv.org/pdf/1301.2184v1.pdf">Penalized splines</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="5-parameter-estimation-and-confidence-intervals-feb-18">5 - Parameter Estimation and Confidence Intervals (Feb. 18)<a class="headerlink" href="#5-parameter-estimation-and-confidence-intervals-feb-18" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture5_ConfidenceIntervals.pdf">Lecture 5</a> Confidence intervals</li>
+<li>Numerical minimizers for best-fit values</li>
+<li><a href="../data/ParameterEstimation_Ex1.txt">Data file</a> for exercise 1 and 2</li>
+<li><a href="../data/MLE_Variance_data.txt">Data file</a> for exercise 3 (<a href="../data/MLE_Variance_data_2.txt">extra data file</a>)</li>
+<li>Reminder: oral presentation and 1-2 page article reports will be due soon<ul>
+<li><a href="https://arxiv.org/abs/1701.02596">Article about Supernova</a> first detection time. Look at the caption for the Supplementary Fig. 8</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="6-markov-chains-feb-20">6 - Markov Chain(s) (Feb. 20)<a class="headerlink" href="#6-markov-chains-feb-20" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture6_MCMC_Bayes.pdf">Lecture 6</a> Markov Chain Monte Carlo (MCMC)</li>
+<li>Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee<ul>
+<li>Just like minimizers, syntax and options matter</li>
+<li>Be familiar with your chosen MCMC package</li>
+</ul>
+</li>
+<li>Some example python code for the exercises (caveat emptor)<ul>
+<li><a href="../Exercises/Lecture6_MCMC_Example1_Niccolo.py">Using emcee</a>, the solution is graciously provided by Niccolo Maffezzoli (2017 TA)</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="7-hypothesis-testing-feb-25">7 - Hypothesis Testing (Feb. 25)<a class="headerlink" href="#7-hypothesis-testing-feb-25" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture7_HypothesisTests.pdf">Lecture 7</a></li>
+<li>Likelihood ratio</li>
+<li>Data files for one of the exercises. Just use the first column in each file. The second column is unimportant.<ul>
+<li><a href="../data/LLH_Ratio_2_data.txt">Data set 1</a></li>
+<li><a href="../data/LLH_Ratio_2a_data.txt">Data set 2</a></li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="8-kernel-density-estimator-feb-27">8 - Kernel Density Estimator (Feb. 27)<a class="headerlink" href="#8-kernel-density-estimator-feb-27" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture8_KDE.pdf">KDE Lecture Slides</a></li>
+<li>In the afternoon there is time to work on the Presentation and/or Project write-up.</li>
+</ul>
+<hr />
+<h2 id="9-independent-work-march-4">9 - Independent Work (March 4)<a class="headerlink" href="#9-independent-work-march-4" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No new lecture or new material.</li>
+</ul>
+<hr />
+<h2 id="10-presentations-and-multivariate-analysis-techniques-march-6">10 - Presentations and Multivariate Analysis techniques (March 6)<a class="headerlink" href="#10-presentations-and-multivariate-analysis-techniques-march-6" title="Permanent link">&para;</a></h2>
+<ul>
+<li>In the morning we will have the presentations from the articles chosen.<ul>
+<li>The class will be split in half, with one session being chaired by Jason and the other session chaired by Preet</li>
+<li>The sessions will be held at NBB 2.1.I.156 and NBB 2.2.I.158, and room in which each group presents will be updated on the online spreadsheet for the assignment, that can be found in Absalon.</li>
+<li>Links to some to some of the previous presentations (<a href="../../2016/Presentations_2016.html">2016</a>, <a href="../../2017/StudentPresentations2017.html">2017</a>, <a href="../../2018/StudentPresentations2018.html">2018</a>, <a href="../../2019/StudentPresentations2019.html">2019</a>, <a href="../../2022/StudentPresentations2022.html">2022</a>, <a href="../../2023/StudentPresentations2023.html">2023</a>, <a href="../../2024/StudentPresentations2024.html">2024</a>)</li>
+<li>This years presentations can be found at <a href="../StudentPresentations/">2025</a></li>
+</ul>
+</li>
+</ul>
+<p><strong>The Boosted Decision Trees</strong></p>
+<ul>
+<li><a href="../Slides/Lecture10_MVA.pdf">Lecture 10</a></li>
+<li>Data<ul>
+<li>Exercise 1 (<a href="../data/BDT_signal_train.txt">training signal</a>, <a href="../data/BDT_background_train.txt">training background</a>, <a href="../data/BDT_signal_test.txt">testing signal</a>, <a href="../data/BDT_background_test.txt">testing background</a>)</li>
+<li>Exercise 2 (16 variable <a href="../data/BDT_16var.txt">file</a>)<ul>
+<li>The first column is the index, hence there are 17 'variables', but the index variable only for book keeping and has no impact on whether an event is signal or background.</li>
+<li>Every even row is the 'signal' and every odd row is the 'background'. Thus, there are two rows for each index in the first column: the first is the signal and the second is the background. [Format is odd, but I got it from a colleague].</li>
+</ul>
+</li>
+<li>Here is the solution data sets separated into two files (<a href="../data/benign_true.txt">benign</a> and <a href="../data/malignant_true.txt">malignant</a>) for the last exercise of the lecture. Here is also the <a href="../Exercises/Exam2_Problem_BDT_CheckSolutions_2016.py">(python) code</a> that I used to establish the efficiency for all the submissions from all the students</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="11-statistical-hypothesis-tests-and-auto-correlation-march-11">11 - Statistical Hypothesis Tests and Auto-Correlation (March 11)<a class="headerlink" href="#11-statistical-hypothesis-tests-and-auto-correlation-march-11" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture_AhlersKoskinen2025.pdf">Lecture slides</a></li>
+<li>Files and some example code<ul>
+<li>Data files in .FITS format: <a href="../data/eventmap1.fits">eventmap1.fits</a> and <a href="../data/truemap1.fits">truemap1.fits</a></li>
+<li>Some example code (all in python): <a href="../Exercises/C1_produce.py">C1_produce.py</a> <a href="../Exercises/C1_show.py">C1_show.py</a> <a href="../Exercises/KS_produce.py">KS_produce.py</a> <a href="../Exercises/KS_show.py">KS_show.py</a> <a href="../Exercises/maxLH_produce.py">maxLH_produce.py</a> <a href="../Exercises/maxLH_show.py">maxLH_show.py</a> <a href="../Exercises/powerspectrum.py">powerspectrum.py</a> <a href="../Exercises/twopoint.py">twopoint.py</a> <a href="../Exercises/Ylm.py">Ylm.py</a></li>
+</ul>
+</li>
+<li><strong>It is recommended (but not necessary)</strong> to have <a href="https://healpix.jpl.nasa.gov">HEALPix software</a> installed on your computer, or some other spherical surface pixelization software. There are options for C, C++, JAVA, Python, and I see some for MATLAB too. You will be expected to draw plots/graphs using spherical projections, e.g. mollweide maps.</li>
+</ul>
+<hr />
+<h2 id="12-work-on-project-march-13">12 - Work on Project (March 13)<a class="headerlink" href="#12-work-on-project-march-13" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No new lecture or new material.</li>
+</ul>
+<hr />
+<h2 id="13-work-on-project-march-18">13 - Work on Project (March 18)<a class="headerlink" href="#13-work-on-project-march-18" title="Permanent link">&para;</a></h2>
+<ul>
+<li>No new lecture or new material.</li>
+</ul>
+<hr />
+<h2 id="14-nested-sampling-bayesian-inference-and-multinest-march-20">14 - Nested Sampling, Bayesian Inference, and MultiNest (March 20)<a class="headerlink" href="#14-nested-sampling-bayesian-inference-and-multinest-march-20" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture13_MultiNest.pdf">Lecture 13</a></li>
+<li>External packages for conducting nested sampling, e.g. MultiNest, are necessary and some python options are:<ul>
+<li>nestle (<a href="http://kbarbary.github.io/nestle/">http://kbarbary.github.io/nestle/</a>)</li>
+<li>UltraNest (<a href="https://johannesbuchner.github.io/UltraNest/index.html">https://johannesbuchner.github.io/UltraNest/index.html</a>)</li>
+<li>Dynesty (<a href="https://dynesty.readthedocs.io/en/stable/index.html">https://dynesty.readthedocs.io/en/stable/index.html</a>)</li>
+</ul>
+</li>
+<li>Very good articles that are easy to read<ul>
+<li>Excellent and readable paper by developer John Skilling on nested sampling (<a href="http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf">http://www.inference.phy.cam.ac.uk/bayesys/nest.pdf</a>)<ul>
+<li><strong>Read up until</strong> the section "The Density of States"</li>
+</ul>
+</li>
+<li>MultiNest academic papers<ul>
+<li><a href="http://arxiv.org/abs/0809.3437">http://arxiv.org/abs/0809.3437</a></li>
+<li><a href="http://arxiv.org/abs/1306.2144">http://arxiv.org/abs/1306.2144</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2 id="15-course-review-non-parametric-tests-lecture-slides-brief-p-value-slides-march-25">15 - Course Review, Non-Parametric Tests Lecture slides, Brief p-value slides (March 25)<a class="headerlink" href="#15-course-review-non-parametric-tests-lecture-slides-brief-p-value-slides-march-25" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="../Slides/Lecture_Review.pdf">Review and recap</a> of a few topics covered in the course</li>
+<li><a href="../Slides/AMAS_2016_Exam_solutions.pdf">2016 Exam Solutions</a></li>
+<li>
+<p>No solutions will be posted for the 2017 exam</p>
+</li>
+<li>
+<p><a href="../Slides/Lecture15_Nonparameteric.pdf">Non-parameteric tests slides</a> (EXTRA)</p>
+<ul>
+<li>Kolmogorov-Smirnov, Anderson-Darling, and Mann-Whitney U tests</li>
+<li><em>Won't be be covered in class</em></li>
+<li>Topics include things that may be useful for research</li>
+</ul>
+</li>
+<li><a href="../Slides/Lecture_PValue.pdf">P-Value slides</a><ul>
+<li>Some extra material about p-values</li>
+<li><a href="../data/PVals1_1.txt">PVals1_1.txt</a> <a href="../data/PVals1_2.txt">PVals1_2.txt</a></li>
+<li><em>Won't be be covered in class</em></li>
+</ul>
+</li>
+</ul>
+<p>Extra Projects of a more difficult nature, for those who want something more challenging.</p>
+<ul>
+<li><a href="../Slides/ProblemFromMIT.pdf">Parameter Goodness-of-fit</a> (PG) in Global physics fits</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href=".." class="md-footer__link md-footer__link--prev" aria-label="Previous: Home">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Home
+              </div>
+            </div>
+          </a>
+        
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link", "navigation.expand", "navigation.footer", "navigation.prune", "navigation.sections", "navigation.tabs", "navigation.top", "navigation.tracking", "search.highlight", "search.suggest", "toc.follow", "toc.integrate"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+    
+  <script id="init-glightbox">const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});
+document$.subscribe(() => { lightbox.reload() });
+</script></body>
+</html>
