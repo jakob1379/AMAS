@@ -1,10 +1,15 @@
 [
   {
-    "version": "2021",
-    "title": "2021",
+    "version": "2022",
+    "title": "2022",
     "aliases": [
       "latest"
-    ],
+    ]
+  },
+  {
+    "version": "2021",
+    "title": "2021",
+    "aliases": [],
     "properties": {
       "git_commit": "2bfe8af487ab70b9f1e3c0fb6178d14863d34f7d",
       "deployed_at": "2025-07-03T09:15:14Z"
