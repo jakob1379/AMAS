@@ -67,9 +67,7 @@
   {
     "version": "2018",
     "title": "2018",
-    "aliases": [
-      "latest"
-    ],
+    "aliases": [],
     "properties": {
       "git_commit": "6d767936419dacded05dec2d335bf6f053c5e256",
       "deployed_at": "2025-07-03T13:08:43Z"
@@ -78,10 +76,12 @@
   {
     "version": "2017",
     "title": "2017",
-    "aliases": [],
+    "aliases": [
+      "latest"
+    ],
     "properties": {
-      "git_commit": "2eb3ab88f3b4e8c2656064f3baf1f7e0cf6ff7e5",
-      "deployed_at": "2025-07-02T06:26:33Z"
+      "git_commit": "5d4a9f6f79272b667953b1756ee0a64f6a646d73",
+      "deployed_at": "2025-07-03T13:08:46Z"
     }
   },
   {
