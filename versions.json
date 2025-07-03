@@ -4,7 +4,11 @@
     "title": "2022",
     "aliases": [
       "latest"
-    ]
+    ],
+    "properties": {
+      "git_commit": "49c4123004613ddbba5fe30c5ebe4ada29da566e",
+      "deployed_at": "2025-07-03T10:24:10Z"
+    }
   },
   {
     "version": "2021",
