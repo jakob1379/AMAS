@@ -2,15 +2,15 @@
 
 Class notes will be posted here on this webpage as they become available.
 
-## Optional Software Help Session (Jan. 27)
+## Optional Software Help Session (Jan. XX)
 
-*   13:00-16:00 in room 4-0-17 at DIKU
-*   Optional session with the Teaching Assistant ( "Juno" Chung Lung Chan) for any students who may need assistance with their computer software setup.
+*   XX:XX-XX:XX in room XXXXX
+*   Optional session with the Teaching Assistant ( "Juno" Chun Lung Chan) for any students who may need assistance with their computer software setup.
 *   Get a preview with the course and some software tools to install.
 
 ---
 
-## 1 - Start (Feb. 7)
+## 1 - Start (Feb. 6)
 
 *   [Course Information](Slides/CourseInformation.pdf)
 *   Chi-square
@@ -26,7 +26,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 2 - Monte Carlo Simulation & Least Squares (Feb. 9)
+## 2 - Monte Carlo Simulation & Least Squares (Feb. 8)
 
 *   [Lecture 2](Slides/Lecture2_MC_LeastSquares.pdf)
 *   Monte Carlo (reminder that lecture starts at 09:00)
@@ -46,7 +46,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 14)
+## 3 - Introduction to Likelihoods and Numerical Minimizers (Feb. 13)
 
 *   [Lecture 3](Slides/Lecture3_General_Likelihood.pdf)
 *   Maximum likelihood method
@@ -55,7 +55,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 4 - Intro. to Bayesian Statistics & Splines (Feb. 16)
+## 4 - Intro. to Bayesian Statistics & Splines (Feb. 15)
 
 *   [Lecture 4](Slides/Lecture4_Bayes.pdf) on Simple Bayesian statistics
 *   Using priors, posteriors, and likelihoods
@@ -71,7 +71,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 5 - Parameter Estimation and Confidence Intervals (Feb. 21)
+## 5 - Parameter Estimation and Confidence Intervals (~~Feb. 20~~ Feb. 22)
 
 *   [Lecture 5](Slides/Lecture5_ConfidenceIntervals.pdf) Confidence intervals
 *   Numerical minimizers for best-fit values
@@ -82,7 +82,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 6 - Markov Chain(s) (Feb. 23)
+## 6 - Markov Chain(s) (Feb. 22)
 
 *   [Lecture 6](Slides/Lecture6_MCMC_Bayes.pdf) Markov Chain Monte Carlo (MCMC)
 *   Look for an external package for Markov Chain Monte Carlo (MCMC), e.g. emcee
@@ -93,7 +93,7 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 7 - Hypothesis Testing (Feb. 28)
+## 7 - Hypothesis Testing (Feb. 27)
 
 *   [Lecture 7](Slides/Lecture7_HypothesisTests.pdf)
 *   Likelihood ratio
@@ -103,30 +103,25 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 8 - Independent work (March 2)
+## 8 - Kernel Density Estimator (Feb. 29)
 
-*   No new lecture material.
-*   Time to work on presentation and/or write-up.
-*   Jason and Juno will be around (in some combination), from 8:30-15:30 in the classroom.
-
----
-
-## 9 - TBD (March 7)
-
-*   Maybe something new, but if so the topic would not be part of an assignment or on the final exam.
-*   Will likely be one of:
-    *   Independent work session
-    *   Topic about sub-threshold anomaly detection in binned data
-    *   Pre-recorded video (available on Absalon) with more content about p-values.
+*   [KDE Lecture Slides](Slides/Lecture8_KDE.pdf)
+*   In the afternoon there is time to work on the Presentation and/or Project write-up.
 
 ---
 
-## 10 - Presentations and Multivariate Analysis techniques (March 9)
+## 9 - Independent Work (March 5)
+
+*   No new lecture or new material.
+
+---
+
+## 10 - Presentations and Multivariate Analysis techniques (March 7)
 
 *   In the morning we are likely to have the presentations from the articles chosen.
-    *   The class will be split in half, with one session being chaired by Jason and the other session chaired by Chun
-    *   Links to some to some of the previous presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations/), [2019](../../2019/StudentPresentations/), [2022](../../2022/StudentPresentations/))
-    *   This years presentations can be found at [2023](./StudentPresentations.md)
+    *   The class may be split in half, with one session being chaired by Jason and the other session chaired by Chun
+    *   Links to some to some of the previous presentations ([2016](../../2016/classes/#10-oral-presentations-in-class-non-parametric-tests), [2017](../../2017/classes/#10-presentations-and-multivariate-analysis-techniques), [2018](../../2018/StudentPresentations/), [2019](../../2019/StudentPresentations/), [2022](../../2022/StudentPresentations/), [2023](../../2023/StudentPresentations/))
+    *   This years presentations can be found at [2024](./StudentPresentations.md)
 
 **The Boosted Decision Trees**
 
@@ -140,36 +135,30 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## Kernel Density Estimator
+## 11 - Statistical Hypothesis Tests and Auto-Correlation (March 12)
 
-*   [KDE Lecture Slides](Slides/Lecture_KDE.pdf)
-*   On Absalon there is a video in the "Media Gallery" tab for a lecture on using Kernel Density Estimators. The slides will be slightly different than what is linked here, but the lecture content remains very similar and relevant.
-
----
-
-## 11 - Work on Project (March 14)
-
-*   No new material.
-*   Unfortunately neither Jason nor Juno will be availabe in person, but may be available via Slack or email.
-
----
-
-## 12 - Statistical Hypothesis Tests and Auto-Correlation (March 16)
-
-*   [Lecture slides](Slides/Lecture_AhlersKoskinen2023.pdf)
+*   [Lecture slides](Slides/Lecture_AhlersKoskinen2024.pdf)
 *   Files and some example code
     *   Data files in .FITS format: [eventmap1.fits](data/eventmap1.fits) and [truemap1.fits](data/truemap1.fits)
     *   Some example code (all in python): [C1_produce.py](Exercises/C1_produce.py) [C1_show.py](Exercises/C1_show.py) [KS_produce.py](Exercises/KS_produce.py) [KS_show.py](Exercises/KS_show.py) [maxLH_produce.py](Exercises/maxLH_produce.py) [maxLH_show.py](Exercises/maxLH_show.py) [powerspectrum.py](Exercises/powerspectrum.py) [twopoint.py](Exercises/twopoint.py) [Ylm.py](Exercises/Ylm.py)
 *   **It is recommended (but not necessary)** to have [HEALPix software](https://healpix.jpl.nasa.gov) installed on your computer, or some other spherical surface pixelization software. There are options for C, C++, JAVA, Python, and I see some for MATLAB too. You will be expected to draw plots/graphs using spherical projections, e.g. mollweide maps.
-*   No afternoon session
 
 ---
 
-## 13 - Nested Sampling, Bayesian Inference, and MultiNest (March 21)
+## 12 - Work on Project (March 14)
+
+*   No new lecture or new material.
+
+---
+
+## 13 - Work on Project (no lecture or new material - March 19)
+
+---
+
+## 14 - Nested Sampling, Bayesian Inference, and MultiNest (March 21)
 
 *   [Lecture 13](Slides/Lecture13_MultiNest.pdf)
 *   External packages for conducting nested sampling, e.g. MultiNest, are necessary and some python options are:
-    *   pymultinest ([https://johannesbuchner.github.io/PyMultiNest/](https://johannesbuchner.github.io/PyMultiNest/))
     *   nestle ([http://kbarbary.github.io/nestle/](http://kbarbary.github.io/nestle/))
     *   UltraNest ([https://johannesbuchner.github.io/UltraNest/index.html](https://johannesbuchner.github.io/UltraNest/index.html))
     *   SuperBayeS ([http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html](http://www.ft.uam.es/personal/rruiz/superbayes/?page=main.html))
@@ -182,15 +171,11 @@ Class notes will be posted here on this webpage as they become available.
 
 ---
 
-## 14 - Work on Project (no lecture or new material - March 23)
-
----
-
-## 15 - Course Review, and Non-Parametric Tests Lecture snippet (March 28)
+## 15 - Course Review, and Non-Parametric Tests Lecture snippet (April 2)
 
 *   [Review and recap](Slides/Lecture_Review.pdf) of a few topics covered in the course
 *   [2016 Exam Solutions](Slides/AMAS_2016_Exam_solutions.pdf)
-*   No solutions will be posted for the 2017
+*   No solutions will be posted for the 2017 exam
 
 *   [Lecture 15](Slides/Lecture15_Nonparameteric.pdf) (EXTRA)
     *   Kolmogorov-Smirnov, Anderson-Darling, and Mann-Whitney U tests

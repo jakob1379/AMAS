@@ -1,4 +1,4 @@
-# Advanced Methods in Applied Statistics 2023
+# Advanced Methods in Applied Statistics 2024
 
 ## The Educators
 
@@ -15,15 +15,15 @@
 
 ## Basic Information
 
-*   Block 3 - Timetable A of the 2023 [academic calendar](http://www.science.ku.dk/english/student-life/studying-at-the-faculty/academic-calendar/)
+*   Block 3 - Timetable A of the 2024 [academic calendar](http://www.science.ku.dk/english/student-life/studying-at-the-faculty/academic-calendar/)
     *   Tues 08:00 - 12:00 and Thurs 08:00- 12:00 & 13:00 - 17:00
     *   Actual
         *   08:45 - 09:00 Q&A or discussion with Jason
         *   **09:00** lecture on new material (not 09:05 or 09:15)
         *   On Thursday there will often be new material starting at 13:00
-        *   On Thursday it is very unlikely that any new material, lectures, or review will happen after 16:00.
-    *   Class Location: øv - bib 4-0-17, Universitetsparken 1-3, DIKU
-    *   Official schedule ([link](https://skema.ku.dk/tt/tt.asp?SDB=KU2223&language=DK&folder=Reporting&style=individual&type=module&idtype=id&id=114333&weeks=28-38&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+individual))
+        *   On Thursday it is unlikely that any new material, lectures, or review will happen after 16:00.
+    *   Class Location: NBB 2.3.H.142 Jagtvej 155
+    *   Official schedule ([link](https://skema.ku.dk/tt/tt.asp?SDB=KU2324&language=DK&folder=Reporting&style=textspreadsheet&type=module&idtype=id&id=121016&weeks=28-38&days=1-5&periods=1-68&width=0&height=0&template=SWSCUST2+module+textspreadsheet))
 *   Classes will be composed of ~20-30% lecture and demonstrations followed by exercise
 *   While assignments, projects, and exercises can be done in the programming language of the students choice, the examples and demonstrations will be mainly in Python and/or scientific packages thereof, i.e. SciPy, NumPy, etc.
 *   Required text or textbooks: None
@@ -35,7 +35,8 @@
     *   2020 Advanced Methods in Applied Statistics [webpage](../../2020/)
     *   2021 Advanced Methods in Applied Statistics [webpage](../../2021/)
     *   2022 Advanced Methods in Applied Statistics [webpage](../../2022/)
-*   It is recommended, but not required, to have taken an introdcutory course on statistics, e.g. "Applied Statistics - From data to results" which can be found [here](http://www.nbi.dk/~petersen/Teaching/AppliedStatistics2022.html)
+    *   2023 Advanced Methods in Applied Statistics [webpage](../../2023/)
+*   It is recommended, but not required, to have taken an introdcutory course on statistics, e.g. "Applied Statistics - From data to results" which can be found [here](http://www.nbi.dk/~petersen/Teaching/AppliedStatistics2023.html)
 
 ---
 
@@ -48,7 +49,7 @@ The presentation, the problems sets, and the project will all be submitted and a
 *   **<u>Project</u>** (30%)
     *   You may start working on **this right now!!**
 *   **<u>Final exam</u>** (40%)
-    *   28 hour take home exam starting on the morning of March 30 and ending on afternoon of March 31
+    *   28 hour take home exam starting on the morning of April 4 and ending on afternoon of April 5
     *   The exam will be similar to problem sets 2 and 3
         *   A handful of more intensive questions as opposed to numerous short questions
         *   The exam will contain problems from any portion of the course material, excluding guest lectures unless otherwise noted.
