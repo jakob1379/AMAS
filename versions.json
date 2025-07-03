@@ -13,9 +13,11 @@
   {
     "version": "2024",
     "title": "2024",
-    "aliases": [],
+    "aliases": [
+      "deployed_at=2025-07-03T12:15:47Z"
+    ],
     "properties": {
-      "git_commit": "dd0aa35be01e0b85fdf62ed22bb87f7d4e5e9aaf",
+      "git_commit": "\"e9c3d4f8afab52ef5b1794aceb3b00a0de3f3041\"--prop-set-string",
       "deployed_at": "2025-07-03T12:06:31Z"
     }
   },
