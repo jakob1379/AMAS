@@ -1,58 +1,91 @@
-# Advanced Methods in Applied Statistics 2025
+<p align="center">
+  <img src=".github/assets/mcmc-chain.svg" width="960" alt="A Metropolis-Hastings chain starts in the tail of a correlated two-dimensional posterior and random-walks into its core; rejected proposals flash and vanish while every draw stacks onto the marginal histograms of theta one and theta two, which grow towards the true marginal curves">
+</p>
 
-This repository contains the source materials for the AMAS2025 course website, built with MkDocs.
+# Advanced Methods in Applied Statistics
 
-**Find the live page here: [https://jakob1379.github.io/AMAS/latest/](https://jakob1379.github.io/AMAS/latest/)**
+Source for the course website of Advanced Methods in Applied Statistics (AMAS)
+at the University of Copenhagen, built with MkDocs and the Material theme.
 
-## Course Overview
+**Live site: [jakob1379.github.io/AMAS/latest](https://jakob1379.github.io/AMAS/latest/)**
 
-This course provides a practical introduction to advanced statistical methods used in modern scientific research. While students may use their preferred programming language for assignments, demonstrations and examples will primarily be in Python, using scientific packages like `SciPy`, `NumPy`, etc.
+The site is versioned with [mike](https://github.com/jimporter/mike): each
+course year from 2016 to 2025 is published as its own version, and `latest`
+points to 2025.
 
-Key topics covered in the course include:
+## The course
 
-* Multivariate analysis (MVA) techniques including Boosted Decision Trees (BDTs)
-* The MultiNest bayesian inference tool
-* Basis splines
-* Markov Chain Monte Carlo
-* Likelihood minimization techniques
-* Spherical surface isotropy
+A practical introduction to advanced statistical methods used in modern
+scientific research. Students may use any programming language for
+assignments; demonstrations and examples are mainly in Python with scientific
+packages such as `SciPy` and `NumPy`.
 
-## Building the Website Locally
+Topics include:
 
-To build and view the site on your local machine, you will need Python and `pip`. It is recommended to work within a virtual environment.
+- Multivariate analysis (MVA) techniques, including Boosted Decision Trees (BDTs)
+- The MultiNest Bayesian inference tool
+- Basis splines
+- Markov Chain Monte Carlo
+- Likelihood minimization techniques
+- Spherical surface isotropy
 
-1. **Clone the repository:**
+## What is in this repository
 
-    ```bash
-    git clone https://github.com/jakob1379/AMAS2025.git
-    cd AMAS2025
-    ```
+| Path                         | Contents                                                            |
+| ---------------------------- | ------------------------------------------------------------------- |
+| `docs/index.md`              | Course home: educators, schedule, evaluation, syllabus              |
+| `docs/classes.md`            | Notes and links for each class                                      |
+| `docs/Slides/`               | Lecture slides, course information and past exams (PDF)             |
+| `docs/Exercises/`            | Example solutions as Python scripts and Jupyter notebooks           |
+| `docs/data/`                 | Data files used in the exercises                                    |
+| `docs/StudentPresentations/` | Student journal-article presentations and write-ups                 |
+| `overrides/`, `styles/`      | Theme template override and custom CSS                              |
+| `mkdocs.yml`                 | Site configuration                                                  |
 
-2. **Install dependencies:**
-    The site requires `mkdocs` and the `material` theme.
+## Build the site locally
 
-    ```bash
-    #using uv
-    uv sync
-    
-    # using pip
-    pip install .
-    ```
+You need Python 3.13 or newer. Working inside a virtual environment is
+recommended.
 
-3. **Serve the website:**
-    Run the following command from the root of the repository:
+1. **Clone the repository**
 
-    ```bash
-    mkdocs serve -o
-    ```
+   ```bash
+   git clone https://github.com/jakob1379/AMAS.git
+   cd AMAS
+   ```
 
-    This will start a local development server. You can view the website by navigating to `http://127.0.0.1:8000`. The site will automatically reload when you make changes to the source files.
+2. **Install dependencies** (`mkdocs`, `mkdocs-material` and plugins)
 
-4. **(Optional) Build static files:**
-    To generate the static HTML files for the site, run:
+   ```bash
+   # using uv
+   uv sync
 
-    ```bash
-    mkdocs build
-    ```
+   # using pip
+   pip install .
+   ```
 
-    The complete site will be generated in a new directory named `site/`.
+3. **Serve the site**
+
+   ```bash
+   mkdocs serve -o
+   ```
+
+   This starts a development server at `http://127.0.0.1:8000` and reloads
+   the page when you change the source files.
+
+4. **Build static files** (optional)
+
+   ```bash
+   mkdocs build
+   ```
+
+   The complete site is written to `site/`.
+
+## Publish a course year
+
+The `deploy` task in `pyproject.toml` runs `mike deploy`, pushes the result
+and moves the `latest` alias to the given version:
+
+```bash
+uv run poe deploy --version 2025
+```
